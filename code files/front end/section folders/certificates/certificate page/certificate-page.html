@@ -11,14 +11,17 @@
 <link rel="stylesheet" href="../../../navbar/navbar-desktop.css">
 <link rel="stylesheet" href="../../../navbar/navbar-mobile.css">
 <link rel="stylesheet" href="../../../theme/styles/light%20mode/homepage/navbar-lightmode.css">
+<link rel="stylesheet" href="../../../theme/styles/evergreen%20mode/homepage/navbar-evergreen-mode.css">
 
 <link rel="stylesheet" href="../../../contacts/contact-desktop.css">
 <link rel="stylesheet" href="../../../contacts/contact-mobile.css">
 <link rel="stylesheet" href="../../../theme/styles/light%20mode/homepage/contact-lightmode.css">
+<link rel="stylesheet" href="../../../theme/styles/evergreen%20mode/homepage/contact-evergreen-mode.css">
 
 <link rel="stylesheet" href="certificate-page-desktop.css">
 <link rel="stylesheet" href="certificate-page-mobile.css">
 <link rel="stylesheet" href="../../../theme/styles/light%20mode/other%20sections/certificates/certificate%20page/certificate-page-lightmode.css">
+<link rel="stylesheet" href="../../../theme/styles/evergreen%20mode/other%20sections/certificates/certificate%20page/certificate-page-evergreen-mode.css">
 </head>
 <body class="cert-page-body">
 
@@ -45,6 +48,18 @@
   </section>
 
   <nav class="cert-filters" aria-label="Filter certificates by category">
+    <button type="button" class="cert-filters__toggle" id="certFiltersToggle" aria-haspopup="true" aria-expanded="false" aria-controls="certFiltersList">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <span class="cert-filters__current" id="certFiltersCurrent">All</span>
+      <svg class="cert-filters__chevron" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="cert-filters__list" id="certFiltersList">
     <button type="button" class="cert-filters__btn is-active" data-filter="all" aria-pressed="true">All</button>
     <button type="button" class="cert-filters__btn" data-filter="technical" aria-pressed="false">Technical</button>
     <button type="button" class="cert-filters__btn" data-filter="ai" aria-pressed="false">AI</button>
@@ -52,6 +67,7 @@
     <button type="button" class="cert-filters__btn" data-filter="hackathons" aria-pressed="false">Hackathons</button>
     <button type="button" class="cert-filters__btn" data-filter="workshops" aria-pressed="false">Workshops</button>
     <button type="button" class="cert-filters__btn" data-filter="experience" aria-pressed="false">Experience</button>
+    </div>
   </nav>
 
   <section class="cert-section js-reveal" aria-labelledby="featuredHeading">

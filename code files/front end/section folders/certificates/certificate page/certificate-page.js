@@ -82,6 +82,7 @@
   }
 
   /* ---------------- CATEGORY FILTERS ---------------- */
+  
   function initFilters() {
     var buttons = document.querySelectorAll(".cert-filters__btn");
     var cards = document.querySelectorAll("#allCertificatesGrid .certificate-card");
@@ -103,6 +104,42 @@
           card.classList.toggle("is-hidden", !match);
         });
       });
+    });
+  }
+
+  /* ---------------- MOBILE FILTER MENU ---------------- */
+  function initFilterMenu() {
+    var toggle = document.getElementById("certFiltersToggle");
+    var list = document.getElementById("certFiltersList");
+    var current = document.getElementById("certFiltersCurrent");
+    if (!toggle || !list) return;
+
+    function setOpen(open) {
+      list.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+    }
+
+    toggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      setOpen(!list.classList.contains("is-open"));
+    });
+
+    list.querySelectorAll(".cert-filters__btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        if (current) current.textContent = btn.textContent;
+        setOpen(false);
+      });
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!list.contains(e.target) && !toggle.contains(e.target)) setOpen(false);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && list.classList.contains("is-open")) {
+        setOpen(false);
+        toggle.focus();
+      }
     });
   }
 
@@ -178,6 +215,7 @@
     initNavbar();
     initContact();
     initFilters();
+    initFilterMenu();
     initModal();
     initReveal();
   });

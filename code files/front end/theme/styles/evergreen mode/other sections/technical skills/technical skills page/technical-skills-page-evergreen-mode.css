@@ -1,0 +1,353 @@
+/* ============================================================
+   FILE: technical-skills-page-evergreen-mode.css
+   Path: code files/front end/theme/styles/evergreen mode/other sections/technical skills/technical skill page/technical-skills-page-evergreen-mode.css
+   Depth: 7 levels up to "code files"
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   BACKGROUND (global theme background, fixed / locked)
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] body {
+  background-image: url("../../../../../../../assets/images/homepage%20baground/desktop%203.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #06140e;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body {
+    background-image: url("../../../../../../../assets/images/homepage%20baground/mobile%203.png");
+  }
+}
+
+/* ------------------------------------------------------------
+   TOKENS + SHARED NAVBAR / CONTACT VARIABLES
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] {
+  color-scheme: dark;
+
+  --eg-glass: rgba(8, 26, 19, 0.62);
+  --eg-glass-strong: rgba(6, 20, 15, 0.74);
+  --eg-border: rgba(52, 211, 153, 0.30);
+  --eg-border-strong: rgba(52, 211, 153, 0.58);
+  --eg-accent: #34d399;
+  --eg-accent-soft: #6ee7b7;
+  --eg-text: #f0f7f3;
+  --eg-muted: #a9c2b6;
+  --eg-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --nav-bg: rgba(8, 26, 19, 0.6);
+  --nav-border: rgba(52, 211, 153, 0.30);
+  --nav-glow: rgba(16, 185, 129, 0.14);
+  --nav-text: #f0f7f3;
+  --nav-text-muted: #a9c2b6;
+  --nav-accent: #34d399;
+  --nav-control-bg: rgba(8, 26, 19, 0.5);
+  --nav-control-border: rgba(52, 211, 153, 0.30);
+}
+
+html[data-theme="evergreen"] .navbar__inner {
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.4), 0 0 20px var(--nav-glow);
+}
+html[data-theme="evergreen"] .navbar__theme-menu {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45), 0 0 16px var(--nav-glow);
+}
+html[data-theme="evergreen"] .navbar__control-btn:hover {
+  background: rgba(52, 211, 153, 0.12);
+}
+html[data-theme="evergreen"] .navbar__theme-option:hover,
+html[data-theme="evergreen"] .navbar__theme-option:focus-visible {
+  background: rgba(52, 211, 153, 0.12);
+}
+html[data-theme="evergreen"] .navbar__link[aria-current="page"] {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .navbar__link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+html[data-theme="evergreen"] .contact {
+  --contact-bg: rgba(8, 26, 19, 0.6);
+  --contact-border: rgba(52, 211, 153, 0.30);
+  --contact-glow: rgba(16, 185, 129, 0.12);
+  --contact-text: #f0f7f3;
+  --contact-text-muted: #a9c2b6;
+  --contact-accent: #34d399;
+  --contact-item-bg: rgba(52, 211, 153, 0.06);
+  --contact-item-border: rgba(52, 211, 153, 0.25);
+}
+html[data-theme="evergreen"] .contact__item:hover .contact__icon,
+html[data-theme="evergreen"] .contact__item:focus-visible .contact__icon {
+  background: rgba(52, 211, 153, 0.14);
+}
+
+/* ------------------------------------------------------------
+   REVEAL (entrance animation base — works with technical-skill.js)
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .reveal {
+  transition: opacity 0.6s ease, transform 0.6s var(--eg-ease);
+}
+
+/* ------------------------------------------------------------
+   HERO
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .skills-page__hero .skills-page__inner {
+  padding: 32px 36px;
+  border-radius: 24px;
+  background: var(--eg-glass);
+  border: 1px solid var(--eg-border);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(52, 211, 153, 0.04);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+html[data-theme="evergreen"] .skills-page__eyebrow {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .skills-page__eyebrow::after {
+  background: var(--eg-accent);
+}
+html[data-theme="evergreen"] .skills-page__heading {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .skills-page__heading-accent {
+  background: linear-gradient(180deg, #6ee7b7, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+html[data-theme="evergreen"] .skills-page__subtext {
+  color: var(--eg-muted);
+}
+
+/* ------------------------------------------------------------
+   SNAPSHOT
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .skills-snapshot__grid {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(52, 211, 153, 0.04);
+}
+html[data-theme="evergreen"] .skills-snapshot__value {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .skills-snapshot__label {
+  color: var(--eg-accent-soft);
+}
+
+/* ------------------------------------------------------------
+   CATEGORY SECTION HEADING + FILTERS
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .skills-categories-section__heading {
+  color: var(--eg-text);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme="evergreen"] .skills-filters__btn {
+  color: var(--eg-muted);
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    color 0.25s ease, box-shadow 0.25s ease, transform 0.25s var(--eg-ease);
+}
+html[data-theme="evergreen"] .skills-filters__btn:hover {
+  color: var(--eg-text);
+  border-color: var(--eg-border-strong);
+  background: rgba(52, 211, 153, 0.10);
+}
+html[data-theme="evergreen"] .skills-filters__btn[aria-pressed="true"],
+html[data-theme="evergreen"] .skills-filters__btn[aria-pressed="true"]:hover {
+  background: var(--eg-accent);
+  border-color: var(--eg-accent);
+  color: #04130d;
+  box-shadow: 0 0 18px rgba(16, 185, 129, 0.28);
+}
+html[data-theme="evergreen"] .skills-filters__btn:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+
+html[data-theme="evergreen"] .skills-filters__trigger {
+  color: var(--eg-text);
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+html[data-theme="evergreen"] .skills-filters__trigger:hover,
+html[data-theme="evergreen"] .skills-filters__trigger[aria-expanded="true"] {
+  background: rgba(52, 211, 153, 0.12);
+  border-color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .skills-filters__trigger-icon,
+html[data-theme="evergreen"] .skills-filters__trigger-chevron {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .skills-filters__trigger:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] .skills-filters__list {
+    background: rgba(6, 20, 15, 0.94);
+    border-color: var(--eg-border);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.12);
+  }
+  html[data-theme="evergreen"] .skills-filters__list .skills-filters__btn:not([aria-pressed="true"]) {
+    background: transparent;
+    border-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  html[data-theme="evergreen"] .skills-filters__list .skills-filters__btn:not([aria-pressed="true"]):hover {
+    background: rgba(52, 211, 153, 0.12);
+    color: var(--eg-text);
+  }
+  html[data-theme="evergreen"] .skills-filters__list .skills-filters__btn[aria-pressed="true"] {
+    box-shadow: none;
+  }
+}
+
+/* ------------------------------------------------------------
+   SKILL CATEGORY CARDS
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .skill-category {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(52, 211, 153, 0.04);
+  transition: opacity 0.6s ease,
+    transform 0.5s var(--eg-ease),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+html[data-theme="evergreen"] .skill-category:hover {
+  border-color: var(--eg-border-strong);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5), 0 0 22px rgba(16, 185, 129, 0.10);
+}
+html[data-theme="evergreen"] .skill-category.is-hidden,
+html[data-theme="evergreen"] .skill-category.reveal.is-visible.is-hidden {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+html[data-theme="evergreen"] .skill-category__icon {
+  color: var(--eg-accent);
+  background: rgba(52, 211, 153, 0.10);
+  border-color: rgba(52, 211, 153, 0.30);
+}
+html[data-theme="evergreen"] .skill-category__title {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .skill-category__desc {
+  color: var(--eg-muted);
+}
+
+/* ------------------------------------------------------------
+   SKILL TILES
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .skill-tile {
+  background: rgba(52, 211, 153, 0.05);
+  border-color: rgba(52, 211, 153, 0.22);
+  transition: border-color 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease, transform 0.3s var(--eg-ease);
+}
+html[data-theme="evergreen"] .skill-tile:hover {
+  border-color: var(--eg-border-strong);
+  background: rgba(52, 211, 153, 0.09);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.32), 0 0 14px rgba(16, 185, 129, 0.12);
+}
+
+html[data-theme="evergreen"] .skill-icon {
+  background: rgba(52, 211, 153, 0.08);
+  border-color: rgba(52, 211, 153, 0.28);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+html[data-theme="evergreen"] .skill-tile:hover .skill-icon {
+  border-color: var(--eg-accent);
+  background: rgba(52, 211, 153, 0.14);
+}
+html[data-theme="evergreen"] .skill-icon__placeholder {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .skill-tile__name {
+  color: var(--eg-text);
+}
+
+/* ------------------------------------------------------------
+   LEARNING STRIP + BACK LINK
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .skills-learning__inner {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(52, 211, 153, 0.04);
+}
+html[data-theme="evergreen"] .skills-learning__icon {
+  color: var(--eg-accent);
+  background: rgba(52, 211, 153, 0.10);
+  border-color: rgba(52, 211, 153, 0.30);
+}
+html[data-theme="evergreen"] .skills-learning__title {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .skills-learning__subtitle {
+  color: var(--eg-muted);
+}
+
+html[data-theme="evergreen"] .skills-back__link {
+  color: var(--eg-accent);
+  border-color: var(--eg-border);
+  background: rgba(52, 211, 153, 0.05);
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    color 0.25s ease, transform 0.25s var(--eg-ease);
+}
+html[data-theme="evergreen"] .skills-back__link:hover,
+html[data-theme="evergreen"] .skills-back__link:focus-visible {
+  background: rgba(52, 211, 153, 0.16);
+  border-color: var(--eg-accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+html[data-theme="evergreen"] .skills-back__link:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] .skills-page__hero .skills-page__inner {
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+}
+
+/* ------------------------------------------------------------
+   REDUCED MOTION
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="evergreen"] .reveal,
+  html[data-theme="evergreen"] .skill-category,
+  html[data-theme="evergreen"] .skill-category.is-hidden,
+  html[data-theme="evergreen"] .skill-tile,
+  html[data-theme="evergreen"] .skill-icon,
+  html[data-theme="evergreen"] .skills-filters__btn,
+  html[data-theme="evergreen"] .skills-back__link {
+    transition: none !important;
+  }
+  html[data-theme="evergreen"] .skill-tile:hover,
+  html[data-theme="evergreen"] .skills-back__link:hover,
+  html[data-theme="evergreen"] .skills-back__link:focus-visible {
+    transform: none;
+  }
+}

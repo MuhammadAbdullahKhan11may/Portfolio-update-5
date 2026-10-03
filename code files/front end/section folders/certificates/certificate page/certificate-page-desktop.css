@@ -62,6 +62,8 @@
 }
 
 /* Category filters */
+.cert-filters__toggle { display: none; }
+.cert-filters__list { display: contents; }
 .cert-filters {
   display: flex;
   flex-wrap: wrap;

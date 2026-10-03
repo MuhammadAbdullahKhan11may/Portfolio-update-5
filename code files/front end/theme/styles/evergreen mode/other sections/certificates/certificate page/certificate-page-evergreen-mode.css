@@ -1,0 +1,356 @@
+/* ============================================================
+   FILE: certificate-page-evergreen-mode.css
+   Path: code files/front end/theme/styles/evergreen mode/other sections/certificates/certificate page/certificate-page-evergreen-mode.css
+   Depth: 7 levels up to "code files"
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   BACKGROUND (global theme background, fixed / locked)
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] body.cert-page-body {
+  background-image: url("../../../../../../../assets/images/homepage%20baground/desktop%203.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #06140e;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body.cert-page-body {
+    background-image: url("../../../../../../../assets/images/homepage%20baground/mobile%203.png");
+    background-attachment: fixed;
+  }
+}
+
+/* ------------------------------------------------------------
+   TOKENS + SHARED NAVBAR / CONTACT VARIABLES
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] {
+  color-scheme: dark;
+
+  --eg-glass: rgba(8, 26, 19, 0.62);
+  --eg-glass-strong: rgba(6, 20, 15, 0.74);
+  --eg-border: rgba(52, 211, 153, 0.30);
+  --eg-border-strong: rgba(52, 211, 153, 0.58);
+  --eg-accent: #34d399;
+  --eg-accent-soft: #6ee7b7;
+  --eg-text: #f0f7f3;
+  --eg-muted: #a9c2b6;
+  --eg-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --nav-bg: rgba(8, 26, 19, 0.6);
+  --nav-border: rgba(52, 211, 153, 0.30);
+  --nav-glow: rgba(16, 185, 129, 0.14);
+  --nav-text: #f0f7f3;
+  --nav-text-muted: #a9c2b6;
+  --nav-accent: #34d399;
+  --nav-control-bg: rgba(8, 26, 19, 0.5);
+  --nav-control-border: rgba(52, 211, 153, 0.30);
+}
+
+html[data-theme="evergreen"] .navbar__inner {
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.4), 0 0 20px var(--nav-glow);
+}
+html[data-theme="evergreen"] .navbar__theme-menu {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45), 0 0 16px var(--nav-glow);
+}
+html[data-theme="evergreen"] .navbar__control-btn:hover {
+  background: rgba(52, 211, 153, 0.12);
+}
+html[data-theme="evergreen"] .navbar__theme-option:hover,
+html[data-theme="evergreen"] .navbar__theme-option:focus-visible {
+  background: rgba(52, 211, 153, 0.12);
+}
+html[data-theme="evergreen"] .navbar__link[aria-current="page"] {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .navbar__link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+html[data-theme="evergreen"] .contact {
+  --contact-bg: rgba(8, 26, 19, 0.6);
+  --contact-border: rgba(52, 211, 153, 0.30);
+  --contact-glow: rgba(16, 185, 129, 0.12);
+  --contact-text: #f0f7f3;
+  --contact-text-muted: #a9c2b6;
+  --contact-accent: #34d399;
+  --contact-item-bg: rgba(52, 211, 153, 0.06);
+  --contact-item-border: rgba(52, 211, 153, 0.25);
+}
+html[data-theme="evergreen"] .contact__item:hover .contact__icon,
+html[data-theme="evergreen"] .contact__item:focus-visible .contact__icon {
+  background: rgba(52, 211, 153, 0.14);
+}
+
+/* ------------------------------------------------------------
+   BACK TO PORTFOLIO
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .cert-back {
+  color: var(--eg-text);
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease, transform 0.25s var(--eg-ease);
+}
+html[data-theme="evergreen"] .cert-back:hover {
+  background: rgba(52, 211, 153, 0.12);
+  border-color: var(--eg-accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 18px rgba(16, 185, 129, 0.16);
+  transform: translateY(-1px);
+}
+html[data-theme="evergreen"] .cert-back:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------
+   HERO
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .cert-hero {
+  padding: 32px 36px;
+  border-radius: 24px;
+  background: var(--eg-glass);
+  border: 1px solid var(--eg-border);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(52, 211, 153, 0.04);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] .cert-hero {
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+}
+
+html[data-theme="evergreen"] .cert-hero__eyebrow {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .cert-hero__eyebrow::after {
+  background: var(--eg-accent);
+}
+html[data-theme="evergreen"] .cert-hero__heading {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .cert-hero__heading-accent {
+  background: linear-gradient(180deg, #6ee7b7, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+html[data-theme="evergreen"] .cert-hero__lead {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .cert-hero__desc {
+  color: var(--eg-muted);
+}
+html[data-theme="evergreen"] .cert-hero__meta {
+  color: var(--eg-accent-soft);
+}
+
+/* ------------------------------------------------------------
+   CATEGORY FILTERS
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .cert-filters__btn {
+  color: var(--eg-muted);
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    color 0.25s ease, box-shadow 0.25s ease, transform 0.25s var(--eg-ease);
+}
+html[data-theme="evergreen"] .cert-filters__btn:hover {
+  color: var(--eg-text);
+  border-color: var(--eg-border-strong);
+  background: rgba(52, 211, 153, 0.10);
+  transform: translateY(-1px);
+}
+html[data-theme="evergreen"] .cert-filters__btn:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+html[data-theme="evergreen"] .cert-filters__btn.is-active,
+html[data-theme="evergreen"] .cert-filters__btn.is-active:hover {
+  background: var(--eg-accent);
+  border-color: var(--eg-accent);
+  color: #04130d;
+  box-shadow: 0 0 18px rgba(16, 185, 129, 0.28);
+  transform: none;
+}
+
+/* ------------------------------------------------------------
+   SECTION HEADINGS
+   ------------------------------------------------------------ */
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] .cert-filters__toggle {
+    color: var(--eg-text);
+    background: var(--eg-glass);
+    border-color: var(--eg-border);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(10px) saturate(140%);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+  }
+  html[data-theme="evergreen"] .cert-filters__toggle:hover,
+  html[data-theme="evergreen"] .cert-filters__toggle[aria-expanded="true"] {
+    background: rgba(52, 211, 153, 0.12);
+    border-color: var(--eg-accent);
+  }
+  html[data-theme="evergreen"] .cert-filters__toggle:focus-visible {
+    outline: 2px solid var(--eg-accent);
+    outline-offset: 2px;
+  }
+  html[data-theme="evergreen"] .cert-filters__list {
+    background: rgba(6, 20, 15, 0.92);
+    border-color: var(--eg-border);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.12);
+  }
+  html[data-theme="evergreen"] .cert-filters__list .cert-filters__btn:not(.is-active) {
+    background: transparent;
+    border-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    transform: none;
+  }
+  html[data-theme="evergreen"] .cert-filters__list .cert-filters__btn:not(.is-active):hover {
+    background: rgba(52, 211, 153, 0.12);
+    color: var(--eg-text);
+  }
+  html[data-theme="evergreen"] .cert-filters__list .cert-filters__btn.is-active {
+    box-shadow: none;
+  }
+}
+
+html[data-theme="evergreen"] .cert-section__heading {
+  color: var(--eg-text);
+}
+
+/* ------------------------------------------------------------
+   CERTIFICATE CARDS
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .certificate-card {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(52, 211, 153, 0.04);
+  transition: opacity 0.6s ease,
+    transform 0.45s var(--eg-ease),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+html[data-theme="evergreen"] .certificate-card.featured-card {
+  background: linear-gradient(180deg, rgba(14, 50, 37, 0.62), rgba(8, 26, 19, 0.68));
+  border-color: rgba(52, 211, 153, 0.42);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.46), 0 0 22px rgba(16, 185, 129, 0.10);
+}
+
+html[data-theme="evergreen"] .certificate-card:hover,
+html[data-theme="evergreen"] .certificate-card.is-visible:hover {
+  transform: translateY(-4px);
+  border-color: var(--eg-border-strong);
+  background-color: var(--eg-glass-strong);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.52), 0 0 24px rgba(16, 185, 129, 0.16);
+}
+
+html[data-theme="evergreen"] .certificate-card:active,
+html[data-theme="evergreen"] .certificate-card.is-visible:active {
+  transform: translateY(-1px);
+}
+
+html[data-theme="evergreen"] .certificate-card:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 3px;
+}
+
+/* Thumbnail frame only — never the certificate image itself */
+html[data-theme="evergreen"] .certificate-card__thumb {
+  background: #eef4ff;
+  border-color: rgba(52, 211, 153, 0.28);
+  box-shadow: inset 0 0 0 1px rgba(4, 14, 10, 0.06);
+}
+html[data-theme="evergreen"] .certificate-card__thumb--dark {
+  background: #07130e;
+}
+html[data-theme="evergreen"] .certificate-card:hover .certificate-card__thumb {
+  border-color: rgba(52, 211, 153, 0.5);
+}
+html[data-theme="evergreen"] .certificate-card__thumb-img {
+  transition: transform 0.5s var(--eg-ease);
+}
+
+html[data-theme="evergreen"] .certificate-card__tag {
+  color: var(--eg-accent-soft);
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.28);
+}
+html[data-theme="evergreen"] .certificate-card__title {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .certificate-card__issuer {
+  color: var(--eg-muted);
+}
+html[data-theme="evergreen"] .certificate-card__date {
+  color: var(--eg-accent-soft);
+}
+
+/* ------------------------------------------------------------
+   MODAL
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .cert-modal {
+  background: rgba(3, 12, 8, 0.86);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+html[data-theme="evergreen"] .cert-modal__frame {
+  transition: transform 0.35s var(--eg-ease);
+}
+html[data-theme="evergreen"] .cert-modal__img {
+  background: #eef4ff;
+  border: 1px solid var(--eg-border);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6), 0 0 28px rgba(16, 185, 129, 0.12);
+}
+html[data-theme="evergreen"] .cert-modal__close {
+  color: var(--eg-text);
+  background: var(--eg-glass-strong);
+  border-color: var(--eg-border);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s var(--eg-ease);
+}
+html[data-theme="evergreen"] .cert-modal__close:hover {
+  background: rgba(52, 211, 153, 0.14);
+  border-color: var(--eg-accent);
+  transform: scale(1.05);
+}
+html[data-theme="evergreen"] .cert-modal__close:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------
+   REDUCED MOTION
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="evergreen"] .certificate-card,
+  html[data-theme="evergreen"] .certificate-card__thumb-img,
+  html[data-theme="evergreen"] .cert-back,
+  html[data-theme="evergreen"] .cert-filters__btn,
+  html[data-theme="evergreen"] .cert-modal__frame,
+  html[data-theme="evergreen"] .cert-modal__close {
+    transition: none !important;
+  }
+  html[data-theme="evergreen"] .certificate-card:hover,
+  html[data-theme="evergreen"] .certificate-card.is-visible:hover,
+  html[data-theme="evergreen"] .certificate-card:active,
+  html[data-theme="evergreen"] .certificate-card.is-visible:active,
+  html[data-theme="evergreen"] .cert-back:hover,
+  html[data-theme="evergreen"] .cert-filters__btn:hover,
+  html[data-theme="evergreen"] .cert-modal__close:hover {
+    transform: none;
+  }
+}
