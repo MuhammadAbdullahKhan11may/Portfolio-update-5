@@ -1,0 +1,16 @@
+/* index-lightmode.css */
+html[data-theme="light"] .hero__eyebrow { color: #2f6fed; }
+html[data-theme="light"] .hero__name-line--white { color: #10213f; }
+html[data-theme="light"] .hero__name-line--blue {
+  background: linear-gradient(180deg, #2f6fed 0%, #1440b0 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="light"] .hero__role { color: #1d4ed8; }
+html[data-theme="light"] .hero__description { color: #33456b; }
+html[data-theme="light"] .hero__stat-num { color: #1d4ed8; }
+html[data-theme="light"] .hero__stat-label { color: #55688f; }
+html[data-theme="light"] .hero__stat-divider { background: rgba(70,120,220,0.3); }
+html[data-theme="light"] .hero__btn--primary { color: #fff; }
+html[data-theme="light"] .hero__btn--secondary {
+  background: rgba(255,255,255,0.55); border-color: rgba(70,120,220,0.32); color: #10213f;
+}

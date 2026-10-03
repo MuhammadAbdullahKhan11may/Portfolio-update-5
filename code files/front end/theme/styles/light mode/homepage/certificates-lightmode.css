@@ -1,0 +1,26 @@
+/* certificates-lightmode.css */
+html[data-theme="light"] .certificates__eyebrow { color: #2f6fed; }
+html[data-theme="light"] .certificates__eyebrow::after { background: #2f6fed; }
+html[data-theme="light"] .certificates__heading { color: #10213f; }
+html[data-theme="light"] .certificates__heading-accent {
+  background: linear-gradient(180deg, #2f6fed, #1440b0);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="light"] .certificates__subtext { color: #33456b; }
+html[data-theme="light"] .certificates__quote {
+  border-left-color: #2f6fed;
+  color: #0d1b33;
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 12px 18px;
+  box-shadow: 0 4px 16px rgba(16, 33, 63, 0.08);
+}
+html[data-theme="light"] .certificate-card { background: rgba(255,255,255,0.6); border-color: rgba(70,120,220,0.28); }
+html[data-theme="light"] .certificate-card__date { color: #3568d4; }
+html[data-theme="light"] .certificate-card__title { color: #10213f; }
+html[data-theme="light"] .certificate-card__tag { background: rgba(47,111,237,0.1); color: #1d4ed8; }
+html[data-theme="light"] .certificate-card__link { border-color: rgba(70,120,220,0.3); background: rgba(47,111,237,0.08); color: #2f6fed; }
+html[data-theme="light"] .certificates__viewall { border-color: rgba(70,120,220,0.3); background: rgba(255,255,255,0.5); color: #10213f; }
+html[data-theme="light"] .certificates__viewall:hover { border-color: #2f6fed; }

@@ -1,0 +1,83 @@
+/* certificates-evergreen-mode.css */
+
+html[data-theme="evergreen"] [class*="certificates__eyebrow"] {
+  color: var(--eg-accent);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+html[data-theme="evergreen"] [class*="certificates__eyebrow"]::after { background: var(--eg-accent); }
+
+html[data-theme="evergreen"] [class*="certificates__heading"] {
+  color: #ffffff;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+html[data-theme="evergreen"] [class*="certificates__heading-accent"] {
+  background: linear-gradient(180deg, var(--eg-accent-soft), var(--eg-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+html[data-theme="evergreen"] [class*="certificates__subtext"] {
+  color: var(--eg-text-soft);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme="evergreen"] .certificate-card {
+  background: var(--eg-glass-soft);
+  border-color: var(--eg-border);
+  box-shadow: var(--eg-shadow);
+  backdrop-filter: var(--eg-blur);
+  -webkit-backdrop-filter: var(--eg-blur);
+}
+html[data-theme="evergreen"] .certificate-card:hover {
+  border-color: var(--eg-accent);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.45), 0 0 26px var(--eg-glow);
+}
+
+html[data-theme="evergreen"] [class*="certificate-card__title"],
+html[data-theme="evergreen"] [class*="certificate-card__name"] {
+  color: #ffffff;
+}
+
+html[data-theme="evergreen"] [class*="certificate-card__date"],
+html[data-theme="evergreen"] [class*="certificate-card__issuer"] {
+  color: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] [class*="certificate-card__desc"],
+html[data-theme="evergreen"] [class*="certificate-card__text"] {
+  color: var(--eg-text-muted);
+}
+
+html[data-theme="evergreen"] .certificate-card__tag {
+  background: var(--eg-pill);
+  border-color: var(--eg-border-soft);
+  color: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] .certificate-card__link {
+  color: var(--eg-accent);
+  border-color: var(--eg-border);
+}
+html[data-theme="evergreen"] .certificate-card__link:hover {
+  border-color: var(--eg-accent);
+  box-shadow: 0 0 18px var(--eg-glow);
+}
+
+html[data-theme="evergreen"] .certificates__viewall {
+  background: var(--eg-glass-soft);
+  border-color: var(--eg-border);
+  color: var(--eg-text);
+  backdrop-filter: var(--eg-blur);
+  -webkit-backdrop-filter: var(--eg-blur);
+}
+html[data-theme="evergreen"] .certificates__viewall:hover {
+  border-color: var(--eg-accent);
+  color: var(--eg-accent);
+  box-shadow: 0 0 22px var(--eg-glow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="evergreen"] .certificate-card { transition: none; }
+}

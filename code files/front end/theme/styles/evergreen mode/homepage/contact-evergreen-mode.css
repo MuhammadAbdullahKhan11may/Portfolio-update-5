@@ -1,0 +1,41 @@
+/* contact-evergreen-mode.css */
+
+html[data-theme="evergreen"] .contact {
+  --contact-bg: rgba(8, 26, 16, 0.55);
+  --contact-border: rgba(46, 234, 139, 0.3);
+  --contact-glow: rgba(46, 234, 139, 0.16);
+  --contact-text: #f4fbf7;
+  --contact-text-muted: #c3d2ca;
+  --contact-accent: #2eea8b;
+  --contact-item-bg: rgba(4, 40, 27, 0.78);
+  --contact-item-border: rgba(46, 234, 139, 0.42);
+}
+
+html[data-theme="evergreen"] .contact__inner {
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.35), 0 0 26px rgba(46, 234, 139, 0.16);
+}
+
+html[data-theme="evergreen"] .contact__icon {
+  color: #ffffff;
+}
+
+html[data-theme="evergreen"] .contact__item:hover .contact__icon,
+html[data-theme="evergreen"] .contact__item:focus-visible .contact__icon {
+  background: rgba(46, 234, 139, 0.18);
+  border-color: #2eea8b;
+  box-shadow: 0 0 20px rgba(46, 234, 139, 0.16);
+}
+
+html[data-theme="evergreen"] .contact a:focus-visible,
+html[data-theme="evergreen"] .contact button:focus-visible {
+  outline: 2px solid #2eea8b;
+  outline-offset: 3px;
+}
+
+html[data-theme="evergreen"] .contact__email-popover {
+  background: rgba(4, 34, 23, 0.94);
+  border-color: rgba(46, 234, 139, 0.3);
+  color: #f4fbf7;
+}

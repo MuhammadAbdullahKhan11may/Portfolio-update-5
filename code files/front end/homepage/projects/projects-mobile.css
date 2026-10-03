@@ -1,0 +1,12 @@
+@media (max-width: 860px) {
+    .projects { padding: 40px 20px; }
+  .projects__heading { font-size: 2rem; }
+
+  .projects__grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Only CareerForge (mobile-visible) shows on mobile */
+  .project-card:not(.project-card--mobile-visible) { display: none; }
+
+  .project-card__preview { height: 140px; }
+  .projects__viewall { width: 100%; justify-content: center; margin-top: 24px; }
+}

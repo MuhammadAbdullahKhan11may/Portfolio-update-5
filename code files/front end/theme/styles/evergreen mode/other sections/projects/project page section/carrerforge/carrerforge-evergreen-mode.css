@@ -1,0 +1,21 @@
+/* ============================================================
+   FILE: carrerforge-evergreen.css
+   Path: code files/front end/theme/styles/evergreen mode/other sections/projects/project page section/carrerforge/carrerforge-evergreen.css
+   ============================================================ */
+
+/* Depth: 8 levels up to "code files".
+   UNRESOLVED: confirm "desktop 3.png" / "mobile 3.png" filenames. */
+html[data-theme="evergreen"] body {
+  background-image: url("../../../../../../../../assets/images/homepage%20baground/desktop%203.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #06140e;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body {
+    background-image: url("../../../../../../../../assets/images/homepage%20baground/mobile%203.png");
+  }
+}

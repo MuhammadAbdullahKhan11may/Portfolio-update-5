@@ -1,0 +1,142 @@
+/* ============================================================
+   FILE: soft-skills-mobile.css
+   Path: code files/front end/section folders/soft skills/soft skill page/soft-skills-mobile.css
+   ============================================================ */
+
+@media (max-width: 860px) {
+
+  body {
+    background-image: url("../../../../assets/images/homepage%20baground/mobile%201.png");
+  }
+
+  .softpage {
+    padding: calc(var(--nav-height, 64px) + 32px) 18px 0;
+  }
+
+  .softpage__hero-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .softpage__heading {
+    font-size: 2rem;
+  }
+
+  .softpage__subtext {
+    font-size: 0.9rem;
+    max-width: none;
+  }
+
+  .how-i-work {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .how-i-work__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .how-i-work__title {
+    font-size: 0.85rem;
+  }
+
+  .how-i-work__desc {
+    font-size: 0.76rem;
+  }
+
+  .my-soft-skills {
+    padding: 34px 0 4px;
+  }
+
+  .my-soft-skills__heading {
+    font-size: 1.5rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .skill-grid__card {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .skill-grid__icon {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .skill-grid__title {
+    font-size: 0.88rem;
+  }
+
+  .skill-grid__desc {
+    font-size: 0.76rem;
+  }
+
+  .evidence {
+    padding: 34px 0 0;
+  }
+
+  .evidence__panel {
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .evidence__header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .evidence__cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .evidence__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .growth-strip {
+    padding: 26px 0 60px;
+  }
+
+  .growth-strip__inner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .growth-strip__text {
+    justify-content: center;
+  }
+
+  .softpage__back-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .softpage {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .how-i-work__grid {
+    grid-template-columns: 1fr;
+  }
+}

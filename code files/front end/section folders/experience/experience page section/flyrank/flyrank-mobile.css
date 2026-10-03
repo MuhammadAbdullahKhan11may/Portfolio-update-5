@@ -1,0 +1,31 @@
+@media (max-width: 860px) {
+
+  :root { --dc-page-top-gap: 110px; }
+
+  body {
+    background-image: url("../../../../../assets/images/homepage%20baground/mobile%201.png");
+  }
+
+  .detail-page { padding-left: 16px; padding-right: 16px; }
+
+  .detail-card { padding: 22px; border-radius: 18px; }
+
+  .detail-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .detail-card__dates { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+
+  .detail-card__role { font-size: 1.25rem; }
+
+  .detail-tabs { gap: 4px; padding: 5px; }
+  .detail-tab { padding: 9px 8px; font-size: 0.8rem; }
+
+  .detail-summary-text, .detail-list__item p, .detail-bullets li, .detail-numbered__item p { font-size: 0.88rem; }
+
+  .detail-list__icon, .detail-numbered__num { width: 30px; height: 30px; }
+
+  #contact-root { margin-top: 40px; }
+}

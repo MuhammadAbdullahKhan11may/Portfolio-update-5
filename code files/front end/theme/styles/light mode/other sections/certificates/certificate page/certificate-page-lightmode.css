@@ -1,0 +1,62 @@
+html[data-theme="light"] .cert-page-body {
+  background-image: url("../../../../../../../assets/images/homepage%20baground/desktop%202.png");
+}
+
+@media (max-width: 860px) {
+  html[data-theme="light"] .cert-page-body {
+    background-image: url("../../../../../../../assets/images/homepage%20baground/mobile%202.png");
+  }
+}
+html[data-theme="light"] .cert-hero__eyebrow { color: #2f6fed; }
+html[data-theme="light"] .cert-hero__eyebrow::after { background: #2f6fed; }
+html[data-theme="light"] .cert-hero__heading { color: #10192e; }
+html[data-theme="light"] .cert-hero__heading-accent {
+  background: linear-gradient(180deg, #2f6fed, #1440b0);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="light"] .cert-hero__lead { color: #10192e; }
+html[data-theme="light"] .cert-hero__desc { color: #4a5875; }
+html[data-theme="light"] .cert-hero__meta { color: #1d4ed8; }
+
+html[data-theme="light"] .cert-back {
+  background: rgba(255,255,255,.82);
+  border-color: rgba(70,120,220,.3);
+  color: #10192e;
+}
+html[data-theme="light"] .cert-back:hover { border-color: #2f6fed; }
+html[data-theme="light"] .cert-back:focus-visible { outline-color: #2f6fed; }
+
+html[data-theme="light"] .cert-filters__btn {
+  background: rgba(255,255,255,.78);
+  border-color: rgba(70,120,220,.3);
+  color: #10192e;
+}
+html[data-theme="light"] .cert-filters__btn:hover { border-color: #2f6fed; color: #10192e; }
+html[data-theme="light"] .cert-filters__btn:focus-visible { outline-color: #2f6fed; }
+html[data-theme="light"] .cert-filters__btn.is-active {
+  background: #2f6fed;
+  border-color: #2f6fed;
+  color: #ffffff;
+}
+
+html[data-theme="light"] .cert-section__heading { color: #10192e; }
+
+html[data-theme="light"] .certificate-card {
+  background: rgba(255,255,255,.82);
+  border-color: rgba(70,120,220,.28);
+}
+html[data-theme="light"] .certificate-card:hover { border-color: #2f6fed; box-shadow: 0 10px 24px rgba(16,33,63,.1), 0 0 16px rgba(60,120,255,.12); }
+html[data-theme="light"] .certificate-card:focus-visible { outline-color: #2f6fed; }
+html[data-theme="light"] .certificate-card__tag { background: rgba(47,111,237,.1); color: #1d4ed8; }
+html[data-theme="light"] .certificate-card__title { color: #10192e; }
+html[data-theme="light"] .certificate-card__issuer { color: #4a5875; }
+html[data-theme="light"] .certificate-card__date { color: #3568d4; }
+
+html[data-theme="light"] .cert-modal { background: rgba(16,25,46,.7); }
+html[data-theme="light"] .cert-modal__close {
+  background: rgba(255,255,255,.85);
+  border-color: rgba(70,120,220,.3);
+  color: #10192e;
+}
+html[data-theme="light"] .cert-modal__close:hover { border-color: #2f6fed; }
+html[data-theme="light"] .cert-modal__close:focus-visible { outline-color: #2f6fed; }

@@ -1,0 +1,54 @@
+/* education-evergreen-mode.css */
+
+html[data-theme="evergreen"] .education__eyebrow {
+  color: var(--eg-accent);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+html[data-theme="evergreen"] .education__eyebrow::after { background: var(--eg-accent); }
+
+html[data-theme="evergreen"] .education__heading {
+  color: #ffffff;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+html[data-theme="evergreen"] .education__heading-accent {
+  background: linear-gradient(180deg, var(--eg-accent-soft), var(--eg-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+html[data-theme="evergreen"] .education__subtext {
+  color: var(--eg-text-soft);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme="evergreen"] .education__card {
+  background: var(--eg-glass-soft);
+  border-color: var(--eg-border);
+  box-shadow: var(--eg-shadow);
+  backdrop-filter: var(--eg-blur);
+  -webkit-backdrop-filter: var(--eg-blur);
+}
+
+html[data-theme="evergreen"] .education__icon {
+  border-color: var(--eg-border);
+  color: var(--eg-accent);
+  background: var(--eg-glass-inner);
+}
+
+html[data-theme="evergreen"] .education__date { color: var(--eg-accent); }
+html[data-theme="evergreen"] .education__degree { color: #ffffff; }
+html[data-theme="evergreen"] .education__institution { color: var(--eg-text-muted); }
+
+html[data-theme="evergreen"] .education__tag {
+  background: var(--eg-pill);
+  color: var(--eg-accent);
+  border: 1px solid var(--eg-border-soft);
+}
+
+html[data-theme="evergreen"] .education__quote {
+  border-left-color: var(--eg-accent);
+  color: var(--eg-text-soft);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+}

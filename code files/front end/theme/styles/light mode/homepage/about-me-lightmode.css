@@ -1,0 +1,22 @@
+/* about-me-lightmode.css */
+html[data-theme="light"] .about__eyebrow { color: #2f6fed; }
+html[data-theme="light"] .about__eyebrow::after { background: #2f6fed; }
+html[data-theme="light"] .about__heading { color: #10213f; }
+html[data-theme="light"] .about__heading-accent {
+  background: linear-gradient(180deg, #2f6fed, #1440b0);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="light"] .about__paragraph { color: #33456b; }
+html[data-theme="light"] .about__quote { border-left-color: #2f6fed; color: #2a3f66; }
+html[data-theme="light"] .about__snapshot {
+  background: rgba(255,255,255,0.6); border-color: rgba(70,120,220,0.28);
+  box-shadow: 0 8px 30px rgba(30,64,175,0.10), 0 0 24px rgba(60,120,255,0.12);
+}
+html[data-theme="light"] .snapshot__dots span { background: #2f6fed; }
+html[data-theme="light"] .snapshot__title { color: #10213f; }
+html[data-theme="light"] .snapshot__badge { background: rgba(47,111,237,0.1); border-color: rgba(70,120,220,0.3); color: #1d4ed8; }
+html[data-theme="light"] .snapshot__list::-webkit-scrollbar-thumb { background: rgba(70,120,220,0.4); }
+html[data-theme="light"] .snapshot__item { background: rgba(255,255,255,0.45); border-color: rgba(70,120,220,0.16); }
+html[data-theme="light"] .snapshot__name { color: #10213f; }
+html[data-theme="light"] .snapshot__desc { color: #55688f; }
+html[data-theme="light"] .snapshot__viewall { color: #2f6fed; }

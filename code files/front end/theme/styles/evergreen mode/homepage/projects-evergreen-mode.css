@@ -1,0 +1,77 @@
+/* projects-evergreen-mode.css — screenshots are intentionally never tinted */
+
+html[data-theme="evergreen"] [class*="projects__eyebrow"] {
+  color: var(--eg-accent);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+html[data-theme="evergreen"] [class*="projects__eyebrow"]::after { background: var(--eg-accent); }
+
+html[data-theme="evergreen"] [class*="projects__heading"] {
+  color: #ffffff;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+html[data-theme="evergreen"] [class*="projects__heading-accent"] {
+  background: linear-gradient(180deg, var(--eg-accent-soft), var(--eg-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+html[data-theme="evergreen"] [class*="projects__subtext"] {
+  color: var(--eg-text-soft);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme="evergreen"] .project-card {
+  background: var(--eg-glass-soft);
+  border-color: var(--eg-border);
+  box-shadow: var(--eg-shadow);
+  backdrop-filter: var(--eg-blur);
+  -webkit-backdrop-filter: var(--eg-blur);
+}
+html[data-theme="evergreen"] .project-card:hover {
+  border-color: var(--eg-accent);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.45), 0 0 28px var(--eg-glow);
+}
+
+html[data-theme="evergreen"] [class*="project-card__title"],
+html[data-theme="evergreen"] [class*="project-card__name"] {
+  color: #ffffff;
+}
+
+html[data-theme="evergreen"] [class*="project-card__category"],
+html[data-theme="evergreen"] [class*="project-card__subtitle"],
+html[data-theme="evergreen"] [class*="project-card__type"] {
+  color: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] [class*="project-card__desc"],
+html[data-theme="evergreen"] [class*="project-card__text"] {
+  color: var(--eg-text-soft);
+}
+
+html[data-theme="evergreen"] [class*="project-card__icon"] {
+  background: var(--eg-glass-inner);
+  border-color: var(--eg-border);
+  color: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] .project-card__link {
+  color: var(--eg-accent);
+  border-color: transparent;
+}
+html[data-theme="evergreen"] .project-card__link:hover {
+  color: var(--eg-accent-soft);
+  text-shadow: 0 0 12px var(--eg-glow);
+}
+
+html[data-theme="evergreen"] [class*="projects__viewall"] {
+  color: var(--eg-accent);
+  border-color: var(--eg-border);
+  background: var(--eg-glass-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="evergreen"] .project-card { transition: none; }
+}

@@ -1,0 +1,16 @@
+/* education-lightmode.css */
+html[data-theme="light"] .education__eyebrow { color: #2f6fed; }
+html[data-theme="light"] .education__eyebrow::after { background: #2f6fed; }
+html[data-theme="light"] .education__heading { color: #10213f; }
+html[data-theme="light"] .education__heading-accent {
+  background: linear-gradient(180deg, #2f6fed, #1440b0);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="light"] .education__subtext { color: #33456b; }
+html[data-theme="light"] .education__card { background: rgba(255,255,255,0.6); border-color: rgba(70,120,220,0.28); }
+html[data-theme="light"] .education__icon { border-color: rgba(70,120,220,0.4); color: #2f6fed; background: rgba(47,111,237,0.08); }
+html[data-theme="light"] .education__date { color: #3568d4; }
+html[data-theme="light"] .education__degree { color: #10213f; }
+html[data-theme="light"] .education__institution { color: #55688f; }
+html[data-theme="light"] .education__tag { background: rgba(47,111,237,0.1); color: #1d4ed8; }
+html[data-theme="light"] .education__quote { border-left-color: #2f6fed; color: #2a3f66; }

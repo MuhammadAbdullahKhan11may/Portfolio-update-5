@@ -1,0 +1,29 @@
+/* technical-skills-lightmode.css */
+html[data-theme="light"] .tech-skills {
+  --ts-bg: rgba(255,255,255,0.6);
+  --ts-border: rgba(70,120,220,0.28);
+  --ts-glow: rgba(60,120,255,0.12);
+  --ts-text: #10213f;
+  --ts-text-muted: #45577a;
+  --ts-accent: #2f6fed;
+  --ts-icon-bg: rgba(47,111,237,0.08);
+  --ts-icon-border: rgba(70,120,220,0.3);
+  --ts-tag-bg: rgba(47,111,237,0.08);
+  --ts-tag-border: rgba(70,120,220,0.28);
+  --ts-divider: rgba(70,120,220,0.16);
+}
+html[data-theme="light"] .tech-skills__card:hover { box-shadow: 0 14px 34px rgba(30,64,175,0.12), 0 0 26px var(--ts-glow); }
+
+html[data-theme="light"] .tech-skills__quote {
+  color: var(--ts-text);
+  background: rgba(255, 255, 255, 0.68);
+  border-left-color: var(--ts-accent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 12px 18px;
+  box-shadow: 0 4px 16px rgba(16, 33, 63, 0.08);
+}
+html[data-theme="light"] .tech-skills__quote p {
+  color: var(--ts-text);
+}

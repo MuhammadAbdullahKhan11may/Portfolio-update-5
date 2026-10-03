@@ -1,0 +1,46 @@
+@media (max-width: 640px) {
+
+    .tech-skills {
+    padding: 40px 16px;
+  }
+
+  .tech-skills__header {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .tech-skills__heading {
+    font-size: 2rem;
+  }
+
+  .tech-skills__quote {
+    padding-left: 14px;
+    max-width: none;
+    font-size: 0.98rem;
+  }
+
+  .tech-skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile shows exactly one card — the strongest/main skill (Frontend),
+     per the mobile reference image. No carousel/arrows/dots. */
+  .tech-skills__card {
+    display: none;
+  }
+
+  .tech-skills__card[data-skill="frontend"] {
+    display: block;
+    padding: 26px 22px;
+  }
+
+  .tech-skills__cta-wrap {
+    margin-top: 28px;
+  }
+
+  .tech-skills__cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

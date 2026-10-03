@@ -1,0 +1,29 @@
+/* soft-skills-lightmode.css */
+html[data-theme="light"] .soft-skills {
+  --ss-bg: rgba(255,255,255,0.6);
+  --ss-border: rgba(70,120,220,0.28);
+  --ss-glow: rgba(60,120,255,0.12);
+  --ss-text: #10213f;
+  --ss-text-muted: #45577a;
+  --ss-accent: #2f6fed;
+  --ss-icon-bg: rgba(47,111,237,0.08);
+  --ss-icon-border: rgba(70,120,220,0.3);
+  --ss-tag-bg: rgba(47,111,237,0.08);
+  --ss-tag-border: rgba(70,120,220,0.28);
+  --ss-divider: rgba(70,120,220,0.16);
+}
+html[data-theme="light"] .soft-skills__card:hover { box-shadow: 0 14px 34px rgba(30,64,175,0.12), 0 0 26px var(--ss-glow); }
+
+html[data-theme="light"] .soft-skills__quote {
+  color: var(--ss-text);
+  background: rgba(255, 255, 255, 0.68);
+  border-left-color: var(--ss-accent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 12px 18px;
+  box-shadow: 0 4px 16px rgba(16, 33, 63, 0.08);
+}
+html[data-theme="light"] .soft-skills__quote p {
+  color: var(--ss-text);
+}

@@ -1,0 +1,15 @@
+@media (max-width: 860px) {
+    .certificates { padding: 40px 20px; }
+
+  .certificates__header { flex-direction: column; gap: 20px; }
+  .certificates__heading { font-size: 2rem; }
+  .certificates__quote { max-width: 100%; }
+
+  .certificates__grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Only the first certificate (mobile-visible) shows on mobile */
+  .certificate-card:not(.certificate-card--mobile-visible) { display: none; }
+
+    .certificate-card__thumb { height: 220px; }
+  .certificates__viewall { width: 100%; justify-content: center; margin-top: 24px; }
+}

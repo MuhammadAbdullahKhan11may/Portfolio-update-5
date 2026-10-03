@@ -1,0 +1,41 @@
+html[data-theme="light"] {
+  --dc-text: #10203f;
+  --dc-text-muted: #45607f;
+  --dc-accent: #1d5fd1;
+  --dc-pill-bg: rgba(70, 130, 220, 0.12);
+  --dc-pill-border: rgba(70, 120, 200, 0.3);
+}
+
+html[data-theme="light"] body {
+  background-image: url("../../../../../../../../assets/images/homepage%20baground/desktop%202.png");
+  background-color: #cfe0f5;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="light"] body {
+    background-image: url("../../../../../../../../assets/images/homepage%20baground/mobile%202.png");
+  }
+}
+
+html[data-theme="light"] .detail-card {
+  background: rgba(235, 244, 255, 0.6);
+  border: 1px solid rgba(90, 140, 220, 0.35);
+  box-shadow: 0 8px 24px rgba(30, 60, 110, 0.14);
+}
+
+html[data-theme="light"] .detail-card__logo {
+  border: 1px solid rgba(90, 140, 220, 0.25);
+}
+
+html[data-theme="light"] .detail-tabs {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+html[data-theme="light"] .detail-tab.is-active {
+  background: rgba(29, 95, 209, 0.16);
+  box-shadow: 0 0 0 1px rgba(29, 95, 209, 0.3) inset;
+}
+
+html[data-theme="light"] .detail-divider {
+  border-top-color: rgba(70, 110, 180, 0.25);
+}

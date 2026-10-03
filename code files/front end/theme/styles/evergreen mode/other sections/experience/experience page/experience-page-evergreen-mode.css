@@ -1,0 +1,54 @@
+html[data-theme="evergreen"] {
+  --exp-text: #f2f8f4;
+  --exp-text-muted: #b3c7bb;
+  --exp-accent: #2eea8b;
+}
+
+html[data-theme="evergreen"] body {
+  background-image: url("../../../../../../../assets/images/homepage%20baground/desktop%203.png");
+  background-color: #08140e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body {
+    background-image: url("../../../../../../../assets/images/homepage%20baground/mobile%203.png");
+  }
+}
+
+html[data-theme="evergreen"] .exp-card {
+  background: rgba(8, 26, 16, 0.55);
+  border: 1px solid rgba(46, 234, 139, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+html[data-theme="evergreen"] .exp-card:hover {
+  border-color: #2eea8b;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45), 0 0 24px rgba(46, 234, 139, 0.16);
+}
+
+html[data-theme="evergreen"] .exp-card__divider {
+  border-top-color: rgba(46, 234, 139, 0.18);
+}
+
+html[data-theme="evergreen"] .exp-card__pill {
+  background: rgba(46, 234, 139, 0.1);
+  border-color: rgba(46, 234, 139, 0.28);
+  color: #2eea8b;
+}
+
+html[data-theme="evergreen"] .exp-card__logo {
+  background: #ffffff;
+  border: 1px solid rgba(46, 234, 139, 0.25);
+}
+
+html[data-theme="evergreen"] .exp-card a:focus-visible,
+html[data-theme="evergreen"] .exp-card button:focus-visible {
+  outline: 2px solid #2eea8b;
+  outline-offset: 2px;
+}

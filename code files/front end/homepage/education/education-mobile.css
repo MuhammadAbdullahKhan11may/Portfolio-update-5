@@ -1,0 +1,7 @@
+@media (max-width: 860px) {
+    .education { padding: 40px 20px; }
+  .education__heading { font-size: 2rem; }
+  .education__grid { grid-template-columns: 1fr; gap: 16px; }
+  .education__card { padding: 20px; }
+  .education__degree { font-size: 1rem; }
+}

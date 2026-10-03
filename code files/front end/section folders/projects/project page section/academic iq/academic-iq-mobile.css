@@ -1,0 +1,62 @@
+/* ============================================================
+   FILE: academic-iq-mobile.css
+   Path: code files/front end/section folders/projects/project page section/academic iq/academic-iq-mobile.css
+   ============================================================ */
+
+@media (max-width: 860px) {
+
+  body {
+    background-image: url("../../../../../assets/images/homepage%20baground/mobile%201.png");
+  }
+
+  .project-detail {
+    padding: calc(var(--nav-height, 64px) + 32px) 18px 60px;
+  }
+
+  .project-detail__title {
+    font-size: 2rem;
+  }
+
+  .project-detail__subtitle {
+    font-size: 1rem;
+  }
+
+  .project-detail__meta {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .project-detail__grid-section,
+  .project-detail__problem-grid,
+  .project-detail__features-grid,
+  .project-detail__stack-list,
+  .project-detail__engineering-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail__workflow-steps {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-detail__workflow-arrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  /* No project screenshots on mobile */
+  .project-detail__gallery {
+    display: none;
+  }
+
+  .project-detail__footer-link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .project-detail {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

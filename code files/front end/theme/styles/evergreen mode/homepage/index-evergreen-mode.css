@@ -1,0 +1,139 @@
+/* index-evergreen-mode.css — Evergreen tokens, background, hero */
+
+html[data-theme="evergreen"] {
+  --eg-accent: #2eea8b;
+  --eg-accent-strong: #18c978;
+  --eg-accent-soft: #8dffc4;
+  --eg-text: #f4fbf7;
+  --eg-text-soft: rgba(244, 251, 247, 0.88);
+  --eg-text-muted: #bdcbc4;
+  --eg-glass: rgba(4, 40, 27, 0.72);
+  --eg-glass-soft: rgba(8, 52, 36, 0.58);
+  --eg-glass-inner: rgba(3, 30, 20, 0.55);
+  --eg-border: rgba(46, 234, 139, 0.32);
+  --eg-border-soft: rgba(125, 210, 164, 0.18);
+  --eg-glow: rgba(46, 234, 139, 0.15);
+  --eg-pill: rgba(46, 234, 139, 0.14);
+  --eg-blur: blur(14px) saturate(140%);
+  --eg-shadow: 0 10px 34px rgba(0, 0, 0, 0.4), 0 0 24px var(--eg-glow);
+  --eg-overlay: linear-gradient(rgba(2, 14, 10, 0.32), rgba(2, 14, 10, 0.32));
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] {
+    --eg-glass: rgba(4, 38, 26, 0.86);
+    --eg-glass-soft: rgba(6, 46, 32, 0.8);
+    --eg-glass-inner: rgba(3, 28, 19, 0.72);
+    --eg-overlay: linear-gradient(rgba(2, 14, 10, 0.38), rgba(2, 14, 10, 0.38));
+  }
+}
+
+/* ---------- Background ---------- */
+html[data-theme="evergreen"] body {
+  color: var(--eg-text);
+  background-image: var(--eg-overlay), url('../../../../../assets/images/homepage%20baground/desktop%203.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body {
+    background-image: var(--eg-overlay), url('../../../../../assets/images/homepage%20baground/mobile%203.png');
+  }
+}
+
+/* ---------- Focus ---------- */
+html[data-theme="evergreen"] a:focus-visible,
+html[data-theme="evergreen"] button:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Hero ---------- */
+html[data-theme="evergreen"] .hero__eyebrow {
+  color: var(--eg-accent);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="evergreen"] .hero__name {
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="evergreen"] .hero__name-line--white {
+  color: #ffffff;
+}
+
+html[data-theme="evergreen"] .hero__name-line--blue {
+  background: linear-gradient(180deg, var(--eg-accent-soft) 0%, var(--eg-accent-strong) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+html[data-theme="evergreen"] .hero__role {
+  color: var(--eg-text);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="evergreen"] .hero__description {
+  color: var(--eg-text-soft);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme="evergreen"] .hero__description::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-top: 22px;
+  border-radius: 2px;
+  background: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] .hero__stat-num {
+  color: var(--eg-accent);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="evergreen"] .hero__stat-label {
+  color: var(--eg-text-soft);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="evergreen"] .hero__stat-divider {
+  background: var(--eg-border-soft);
+}
+
+html[data-theme="evergreen"] .hero__btn--primary {
+  background: linear-gradient(135deg, #14b06c, #0b7a4b);
+  color: #ffffff;
+  border-color: var(--eg-border);
+  box-shadow: 0 6px 22px rgba(24, 201, 120, 0.35);
+}
+
+html[data-theme="evergreen"] .hero__btn--primary:hover {
+  box-shadow: 0 8px 28px rgba(46, 234, 139, 0.5);
+}
+
+html[data-theme="evergreen"] .hero__btn--secondary {
+  background: var(--eg-glass-soft);
+  border-color: var(--eg-border);
+  color: var(--eg-text);
+  backdrop-filter: var(--eg-blur);
+  -webkit-backdrop-filter: var(--eg-blur);
+}
+
+html[data-theme="evergreen"] .hero__btn--secondary:hover {
+  box-shadow: 0 0 20px var(--eg-glow);
+  border-color: var(--eg-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="evergreen"] .hero__btn--primary,
+  html[data-theme="evergreen"] .hero__btn--secondary {
+    transition: none;
+  }
+}

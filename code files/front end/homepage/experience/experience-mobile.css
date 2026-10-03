@@ -1,0 +1,11 @@
+@media (max-width: 860px) {
+    .experience { padding: 40px 20px; }
+  .experience__heading { font-size: 2rem; }
+
+  .experience__grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Only the Teaching Assistant card (2nd article) shows on mobile */
+  .experience__card--desktop-only { display: none; }
+
+  .experience__viewall { width: 100%; justify-content: center; margin-top: 24px; }
+}

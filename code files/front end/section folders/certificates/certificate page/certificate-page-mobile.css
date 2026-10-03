@@ -1,0 +1,44 @@
+@media (max-width: 860px) {
+
+  .cert-page-body {
+    background-image: url("../../../../assets/images/homepage%20baground/mobile%201.png");
+    background-attachment: scroll;
+  }
+
+  .cert-page {
+    padding: calc(var(--nav-height, 64px) + 28px) 18px 30px;
+  }
+
+  .cert-back { padding: 8px 14px; font-size: .85rem; }
+
+  .cert-hero { margin-bottom: 32px; }
+  .cert-hero__heading { font-size: 1.9rem; }
+  .cert-hero__lead { font-size: 1rem; }
+  .cert-hero__desc { font-size: .92rem; }
+  .cert-hero__meta { flex-wrap: wrap; row-gap: 6px; }
+
+  .cert-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin: 0 -18px 36px;
+    padding: 0 18px;
+  }
+  .cert-filters::-webkit-scrollbar { display: none; }
+  .cert-filters__btn { flex: 0 0 auto; white-space: nowrap; }
+
+  .cert-section { margin-bottom: 40px; }
+  .cert-section__heading { font-size: 1.25rem; }
+
+  .cert-featured-grid,
+  .cert-all-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-card__thumb { height: 210px; }
+
+  .cert-modal__close { top: 16px; right: 16px; width: 38px; height: 38px; }
+  .cert-modal__frame { max-width: 94vw; max-height: 82vh; }
+  .cert-modal__img { max-width: 94vw; max-height: 82vh; }
+}

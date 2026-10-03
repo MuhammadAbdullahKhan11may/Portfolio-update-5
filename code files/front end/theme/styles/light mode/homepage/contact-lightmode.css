@@ -1,0 +1,13 @@
+/* contact-lightmode.css */
+html[data-theme="light"] .contact {
+  --contact-bg: rgba(255,255,255,0.6);
+  --contact-border: rgba(70,120,220,0.28);
+  --contact-glow: rgba(60,120,255,0.12);
+  --contact-text: #10213f;
+  --contact-text-muted: #45577a;
+  --contact-accent: #2f6fed;
+  --contact-item-bg: rgba(47,111,237,0.06);
+  --contact-item-border: rgba(70,120,220,0.25);
+}
+html[data-theme="light"] .contact__item:hover .contact__icon,
+html[data-theme="light"] .contact__item:focus-visible .contact__icon { background: rgba(47,111,237,0.12); }

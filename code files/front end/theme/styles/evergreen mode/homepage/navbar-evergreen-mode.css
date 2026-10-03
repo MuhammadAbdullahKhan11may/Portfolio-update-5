@@ -1,0 +1,94 @@
+/* navbar-evergreen-mode.css */
+
+html[data-theme="evergreen"] {
+  --nav-bg: rgba(4, 36, 25, 0.62);
+  --nav-border: var(--eg-border);
+  --nav-glow: var(--eg-glow);
+  --nav-text: var(--eg-text);
+  --nav-text-muted: var(--eg-text-muted);
+  --nav-accent: var(--eg-accent);
+  --nav-control-bg: rgba(4, 36, 25, 0.72);
+  --nav-control-border: rgba(46, 234, 139, 0.4);
+}
+
+html[data-theme="evergreen"] .navbar__inner {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18), 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 24px var(--nav-glow);
+}
+
+html[data-theme="evergreen"] .navbar__brand {
+  color: #ffffff;
+}
+
+html[data-theme="evergreen"] .navbar__link {
+  color: var(--nav-text);
+}
+
+html[data-theme="evergreen"] .navbar__link:hover,
+html[data-theme="evergreen"] .navbar__link:focus-visible,
+html[data-theme="evergreen"] .navbar__link.is-active,
+html[data-theme="evergreen"] .navbar__link[aria-current="page"] {
+  color: var(--nav-accent);
+}
+
+html[data-theme="evergreen"] .navbar__link.is-active::after,
+html[data-theme="evergreen"] .navbar__link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* Control buttons (GitHub, theme, hamburger) — same shape as other themes, green colors only */
+html[data-theme="evergreen"] .navbar__control-btn,
+html[data-theme="evergreen"] .navbar__toggle {
+  border-color: var(--nav-control-border);
+  background: var(--nav-control-bg);
+  color: var(--nav-text);
+}
+
+html[data-theme="evergreen"] .navbar__control-btn:hover,
+html[data-theme="evergreen"] .navbar__toggle:hover {
+  background: rgba(46, 234, 139, 0.16);
+  border-color: var(--nav-accent);
+  box-shadow: 0 0 14px var(--nav-glow);
+}
+
+html[data-theme="evergreen"] .navbar a:focus-visible,
+html[data-theme="evergreen"] .navbar button:focus-visible {
+  outline-color: var(--nav-accent);
+}
+
+/* Theme dropdown */
+html[data-theme="evergreen"] .navbar__theme-menu {
+  background: rgba(4, 34, 23, 0.92);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 18px var(--nav-glow);
+}
+
+html[data-theme="evergreen"] .navbar__theme-option:hover,
+html[data-theme="evergreen"] .navbar__theme-option:focus-visible {
+  background: rgba(46, 234, 139, 0.16);
+}
+
+html[data-theme="evergreen"] .navbar__theme-option[aria-checked="true"] {
+  background: rgba(46, 234, 139, 0.12);
+}
+
+html[data-theme="evergreen"] .navbar__theme-check {
+  color: var(--nav-accent);
+}
+
+/* Mobile */
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] .navbar__menu {
+    background: rgba(4, 34, 23, 0.92);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45), 0 0 20px var(--nav-glow);
+  }
+
+  html[data-theme="evergreen"] .navbar__link:hover,
+  html[data-theme="evergreen"] .navbar__link:focus-visible {
+    background: rgba(46, 234, 139, 0.14);
+    color: var(--nav-text);
+  }
+
+  html[data-theme="evergreen"] .navbar__link.is-active {
+    background: rgba(46, 234, 139, 0.12);
+    color: var(--nav-accent);
+  }
+}

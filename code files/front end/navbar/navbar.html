@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar</title>
+<!-- ============================================================
+     NAVBAR COMPONENT
+     Include navbar-desktop.css BEFORE navbar-mobile.css.
+     Place navbar.js right after this markup (not deferred) so the
+     saved theme applies before the rest of the page paints.
+     ============================================================ -->
+<link rel="stylesheet" href="navbar-desktop.css">
+<link rel="stylesheet" href="navbar-mobile.css">
+</head>
+<body>
+
+<nav class="navbar" id="siteNavbar">
+  <div class="navbar__inner">
+
+        <a href="#" class="navbar__brand" data-nav="home" aria-label="Abdullah Khan — Home">Abdullah Khan</a>
+
+        <ul class="navbar__menu" id="navMenu">
+      <li><a href="#about" class="navbar__link" data-nav="about">About</a></li>
+      <li><a href="#education" class="navbar__link" data-nav="education">Education</a></li>
+      <li><a href="#experience" class="navbar__link" data-nav="experience">Experience</a></li>
+      <li><a href="#projects" class="navbar__link" data-nav="projects">Projects</a></li>
+      <li><a href="#certificates" class="navbar__link" data-nav="certificates">Certificates</a></li>
+      <li><a href="#skills" class="navbar__link" data-nav="skills">Skills</a></li>
+      <li><a href="#contact" class="navbar__link" data-nav="contact">Contact</a></li>
+    </ul>
+
+    <div class="navbar__controls">
+
+           <a href="https://github.com/MuhammadAbdullahKhan11may" class="navbar__control-btn navbar__github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.16.69-3.83-1.52-3.83-1.52-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.47 3.14-1.16 3.14-1.16.63 1.57.24 2.73.12 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55 4.51-1.5 7.76-5.76 7.76-10.78C23.25 5.48 18.27.5 12 .5Z"/>
+        </svg>
+      </a>
+
+      <div class="navbar__theme" id="themeControl">
+        <button type="button" class="navbar__control-btn navbar__theme-btn" id="themeToggle"
+                aria-label="Choose theme" aria-haspopup="true" aria-expanded="false" aria-controls="themeMenu">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M12 3a9 9 0 000 18z" fill="currentColor"/>
+          </svg>
+        </button>
+
+        <ul class="navbar__theme-menu" id="themeMenu" role="menu" aria-label="Theme">
+          <li role="none">
+            <button role="menuitemradio" class="navbar__theme-option" data-theme-value="system" aria-checked="true">
+              <span>System</span>
+              <svg class="navbar__theme-check" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                <path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </li>
+          <li role="none">
+            <button role="menuitemradio" class="navbar__theme-option" data-theme-value="light" aria-checked="false">
+              <span>Light</span>
+              <svg class="navbar__theme-check" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                <path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </li>
+          <li role="none">
+            <button role="menuitemradio" class="navbar__theme-option" data-theme-value="evergreen" aria-checked="false">
+              <span>Evergreen</span>
+              <svg class="navbar__theme-check" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                <path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="navbar__toggle" id="navToggle"
+              aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <svg class="navbar__icon navbar__icon--menu" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <svg class="navbar__icon navbar__icon--close" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6L18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!-- ============================================================
+     FILE: fire-detector-alarm.html
+     Path: code files/front end/section folders/projects/project page section/fire detector alarm/fire-detector-alarm.html
+     ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fire Detector Alarm — Abdullah Khan</title>
+
+<script src="../../../../theme/theme.js"></script>
+<link rel="stylesheet" href="../../../../theme/styles/theme-transition.css">
+
+<link rel="stylesheet" href="../../../../navbar/navbar-desktop.css">
+<link rel="stylesheet" href="../../../../navbar/navbar-mobile.css">
+
+<link rel="stylesheet" href="fire-detector-alarm-desktop.css">
+<link rel="stylesheet" href="fire-detector-alarm-mobile.css">
+<link rel="stylesheet" href="../../../../theme/styles/light%20mode/other%20sections/projects/project%20page%20section/fire%20detector%20alarm/fire-detector-alarm-lightmode.css">
+<link rel="stylesheet" href="../../../../theme/styles/evergreen%20mode/other%20sections/projects/project%20page%20section/project-detail-evergreen-mode.css">
+<link rel="stylesheet" href="../../../../theme/styles/evergreen%20mode/homepage/contact-evergreen-mode.css">
+<link rel="stylesheet" href="../../../../theme/styles/evergreen%20mode/other%20sections/projects/project%20page%20section/fire%20detector%20alarm/fire-detector-alarm-evergreen-mode.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="project-detail" id="page-content">
+
+  <div class="project-detail__topbar">
+    <a href="../../project%20page/project-page.html" class="project-detail__back">
+      <span aria-hidden="true">←</span> Back to Projects
+    </a>
+  </div>
+
+  <section class="project-detail__intro" aria-labelledby="introHeading">
+    <div class="project-detail__intro-inner">
+      <p class="project-detail__eyebrow">MY PROJECTS</p>
+      <h1 class="project-detail__title" id="introHeading">
+        Fire <span class="project-detail__title-accent">Detector Alarm</span>
+      </h1>
+      <p class="project-detail__subtitle">Thermistor-Based Fire Detection Circuit</p>
+      <p class="project-detail__desc">A temperature-sensitive fire detection circuit built around an NTC thermistor, NPN transistor and 555 Timer IC. The system responds to rising temperature and activates a buzzer after the configured threshold is crossed.</p>
+
+      <ul class="project-detail__meta">
+        <li><span class="project-detail__meta-label">Type</span><span class="project-detail__meta-value">Physics / Electronics</span></li>
+        <li><span class="project-detail__meta-label">Role</span><span class="project-detail__meta-value">Group Leader</span></li>
+        <li><span class="project-detail__meta-label">Focus</span><span class="project-detail__meta-value">Temperature Detection</span></li>
+        <li><span class="project-detail__meta-label">Status</span><span class="project-detail__meta-value">Constructed</span></li>
+      </ul>
+
+      <a href="../../../../../assets/images/section%20specific%20cards/projects/fire%20detector%20alarm/Fire%20detector%20alarm%20Presentation.pdf" class="project-detail__doc-btn" target="_blank" rel="noopener noreferrer">View Document <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="project-detail__grid-section" aria-labelledby="overviewHeading">
+    <div class="project-detail__overview">
+      <h2 id="overviewHeading">Project Overview</h2>
+      <p>This project demonstrates a temperature-sensitive fire alarm built from an NTC thermistor and supporting analog electronics. The thermistor detects a rise in temperature, the signal passes through a transistor switching stage, and a 555 Timer controls activation of a buzzer once the configured threshold is crossed.</p>
+    </div>
+    <div class="project-detail__objective">
+      <h2>Objective</h2>
+      <ul>
+        <li>Detect a rise in temperature that may indicate possible fire</li>
+        <li>Convert temperature change into an electrical signal</li>
+        <li>Trigger the 555 Timer when the configured threshold is crossed</li>
+        <li>Activate an audible buzzer</li>
+        <li>Demonstrate the operation of sensors, transistor switching and the 555 Timer</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project-detail__workflow" aria-labelledby="workflowHeading">
+    <h2 id="workflowHeading">How the Circuit Works</h2>
+    <ol class="project-detail__steps">
+      <li class="project-detail__step">
+        <span class="project-detail__step-num">01</span>
+        <h3>Normal Temperature</h3>
+        <p>The NTC thermistor monitors temperature.</p>
+      </li>
+      <li class="project-detail__step-arrow" aria-hidden="true">→</li>
+      <li class="project-detail__step">
+        <span class="project-detail__step-num">02</span>
+        <h3>Temperature Rises</h3>
+        <p>The thermistor's resistance decreases as temperature increases.</p>
+      </li>
+      <li class="project-detail__step-arrow" aria-hidden="true">→</li>
+      <li class="project-detail__step">
+        <span class="project-detail__step-num">03</span>
+        <h3>Transistor Activates</h3>
+        <p>The sensor circuit causes the NPN transistor stage to activate when the configured threshold is reached.</p>
+      </li>
+      <li class="project-detail__step-arrow" aria-hidden="true">→</li>
+      <li class="project-detail__step">
+        <span class="project-detail__step-num">04</span>
+        <h3>555 Timer Triggered</h3>
+        <p>The transistor stage triggers the 555 Timer circuit.</p>
+      </li>
+      <li class="project-detail__step-arrow" aria-hidden="true">→</li>
+      <li class="project-detail__step">
+        <span class="project-detail__step-num">05</span>
+        <h3>Buzzer Activates</h3>
+        <p>The buzzer produces an audible warning.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="project-detail__components" aria-labelledby="componentsHeading">
+    <h2 id="componentsHeading">Core Components</h2>
+    <div class="project-detail__components-grid">
+      <div class="project-detail__component-card">
+        <h3>NTC Thermistor</h3>
+        <p class="project-detail__component-value">10kΩ at 27°C</p>
+        <p class="project-detail__component-desc">Temperature sensor</p>
+      </div>
+      <div class="project-detail__component-card">
+        <h3>Potentiometer</h3>
+        <p class="project-detail__component-value">1MΩ</p>
+        <p class="project-detail__component-desc">Sensitivity adjustment</p>
+      </div>
+      <div class="project-detail__component-card">
+        <h3>NPN Transistor</h3>
+        <p class="project-detail__component-desc">Switching / amplification stage</p>
+      </div>
+      <div class="project-detail__component-card">
+        <h3>555 Timer IC</h3>
+        <p class="project-detail__component-desc">Alarm control / timing circuit</p>
+      </div>
+      <div class="project-detail__component-card">
+        <h3>Capacitor C1</h3>
+        <p class="project-detail__component-value">10µF</p>
+        <p class="project-detail__component-desc">Signal stabilization</p>
+      </div>
+      <div class="project-detail__component-card">
+        <h3>Buzzer</h3>
+        <p class="project-detail__component-value">200 Hz</p>
+        <p class="project-detail__component-desc">Audible alarm output</p>
+      </div>
+      <div class="project-detail__component-card">
+        <h3>9V Battery</h3>
+        <p class="project-detail__component-desc">Power source</p>
+      </div>
+      <div class="project-detail__component-card">
+        <h3>Resistors</h3>
+        <p class="project-detail__component-value">R1 100kΩ · R4 4.7kΩ · R5 1kΩ · R6 100kΩ</p>
+        <p class="project-detail__component-desc">Current limiting</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-detail__simulation" aria-labelledby="simulationHeading">
+    <h2 id="simulationHeading">Circuit Simulation</h2>
+    <button type="button" class="project-detail__simulation-trigger" id="circuitTrigger" aria-haspopup="dialog">
+      <img src="../../../../../assets/images/section%20specific%20cards/projects/fire%20detector%20alarm/simulation.jpg" alt="Fire detector alarm circuit using a thermistor, NPN transistor, 555 Timer IC and buzzer." class="project-detail__simulation-img">
+    </button>
+    <p class="project-detail__simulation-hint">Click diagram to enlarge</p>
+  </section>
+
+  <section class="project-detail__split" aria-labelledby="limitationsHeading">
+    <div class="project-detail__split-grid">
+      <div class="project-detail__split-card">
+        <h2 id="limitationsHeading">Limitations</h2>
+        <ul>
+          <li>Component tolerances can affect threshold accuracy</li>
+          <li>Electrical noise can influence sensing and triggering</li>
+          <li>Calibration is required</li>
+          <li>Sensor/circuit response is not instantaneous</li>
+          <li>Basic circuit has limited protection</li>
+          <li>Single heat-based sensing is less sophisticated than multi-sensor systems</li>
+        </ul>
+      </div>
+      <div class="project-detail__split-card">
+        <h2>Possible Improvements</h2>
+        <ul>
+          <li>More accurate sensor such as LM35 or DS18B20</li>
+          <li>Comparator such as LM393</li>
+          <li>Filtering or hysteresis</li>
+          <li>Test and mute buttons</li>
+          <li>Smoke/gas sensing</li>
+          <li>Better circuit protection</li>
+          <li>Improved physical enclosure</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-detail__footer-nav">
+    <a href="../../project%20page/project-page.html" class="project-detail__footer-link">
+      <span aria-hidden="true">←</span> Back to Projects
+    </a>
+  </div>
+
+</main>
+
+<div class="lightbox" id="circuitLightbox" role="dialog" aria-modal="true" aria-label="Enlarged circuit diagram" hidden>
+  <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+  <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Close enlarged image">×</button>
+  <img src="../../../../../assets/images/section%20specific%20cards/projects/fire%20detector%20alarm/simulation.jpg" alt="Fire detector alarm circuit using a thermistor, NPN transistor, 555 Timer IC and buzzer." class="lightbox__img" id="lightboxImg">
+</div>
+
+<div id="contact-root"></div>
+
+<script src="fire-detector-alarm.js"></script>
+</body>
+</html>

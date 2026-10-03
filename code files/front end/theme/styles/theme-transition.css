@@ -1,0 +1,96 @@
+/* ============================================================
+   THEME-TRANSITION.CSS — global circular reveal for theme
+   switching. Owned by theme.js's transition logic; not part of
+   Light Mode or any single section's styling. Linked once from
+   index.html.
+   ============================================================ */
+
+/* Kill the browser's default root crossfade so only our
+   clip-path circle (animated from theme.js) is visible. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-group(root) {
+  animation-duration: 1400ms;
+}
+
+/* Subtle glass-morph support for browsers/paths that skip the
+   View Transition (no support, or prefers-reduced-motion) so an
+   instant attribute swap still feels intentional rather than
+   jarring. Values are read from each component's own CSS
+   variables/rules; this only adds the transition timing. */
+.navbar__inner,
+.navbar__theme-menu,
+.navbar__theme-option,
+.navbar__control-btn,
+.navbar__link,
+.hero__btn--secondary,
+.about__snapshot,
+.snapshot__item,
+.snapshot__badge,
+.snapshot__viewall,
+.education__card,
+.education__icon,
+.education__tag,
+.experience__card,
+.experience__pill,
+.experience__details,
+.project-card,
+.project-card__link,
+.certificate-card,
+.certificate-card__tag,
+.certificate-card__link,
+.certificates__viewall,
+.tech-skills__card,
+.tech-skills__cta,
+.soft-skills__card,
+.soft-skills__cta,
+.contact__inner,
+.contact__icon,
+.contact__email-popover {
+  transition: background-color 0.35s ease, background 0.35s ease,
+    border-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.01ms !important;
+  }
+
+  .navbar__inner,
+  .navbar__theme-menu,
+  .navbar__theme-option,
+  .navbar__control-btn,
+  .navbar__link,
+  .hero__btn--secondary,
+  .about__snapshot,
+  .snapshot__item,
+  .snapshot__badge,
+  .snapshot__viewall,
+  .education__card,
+  .education__icon,
+  .education__tag,
+  .experience__card,
+  .experience__pill,
+  .experience__details,
+  .project-card,
+  .project-card__link,
+  .certificate-card,
+  .certificate-card__tag,
+  .certificate-card__link,
+  .certificates__viewall,
+  .tech-skills__card,
+  .tech-skills__cta,
+  .soft-skills__card,
+  .soft-skills__cta,
+  .contact__inner,
+  .contact__icon,
+  .contact__email-popover {
+    transition: none;
+  }
+}

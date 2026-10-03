@@ -1,0 +1,56 @@
+/* ============================================================
+   FILE: psychology-project-mobile.css
+   Path: code files/front end/section folders/projects/project page section/psychology project/psychology-project-mobile.css
+   ============================================================ */
+
+@media (max-width: 860px) {
+
+  body {
+    background-image: url("../../../../../assets/images/homepage%20baground/mobile%201.png");
+  }
+
+  .project-detail {
+    padding: calc(var(--nav-height, 64px) + 28px) 18px 50px;
+  }
+
+  .project-detail__title {
+    font-size: 1.8rem;
+  }
+
+  .project-detail__subtitle {
+    font-size: 0.98rem;
+  }
+
+  .project-detail__meta {
+    gap: 14px;
+  }
+
+    .project-detail__purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .project-detail__simple {
+    padding: 20px 22px;
+  }
+
+  .project-detail__purpose-grid > div {
+    padding: 16px 18px;
+  }
+
+  /* No project photos on mobile */
+  .project-detail__gallery {
+    display: none;
+  }
+
+  .project-detail__footer-link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .project-detail {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

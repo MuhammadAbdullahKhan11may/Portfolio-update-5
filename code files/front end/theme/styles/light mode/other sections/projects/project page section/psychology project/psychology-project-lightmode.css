@@ -1,0 +1,120 @@
+/* ============================================================
+   FILE: psychology-project-lightmode.css
+   Path: code files/front end/theme/styles/light mode/other sections/projects/project page section/psychology project/psychology-project-lightmode.css
+   ============================================================ */
+
+html[data-theme="light"] body {
+  background-image: url("../../../../../../../../assets/images/homepage%20baground/desktop%202.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #eef3fb;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="light"] body {
+    background-image: url("../../../../../../../../assets/images/homepage%20baground/mobile%202.png");
+  }
+}
+
+html[data-theme="light"] .project-detail__eyebrow {
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .project-detail__title,
+html[data-theme="light"] .project-detail__subtitle,
+html[data-theme="light"] .project-detail h2,
+html[data-theme="light"] .project-detail h3,
+html[data-theme="light"] .project-detail__meta-value,
+html[data-theme="light"] .project-detail__back,
+html[data-theme="light"] .project-detail__footer-link,
+html[data-theme="light"] .project-detail__purpose-num {
+  color: #10192e;
+}
+
+html[data-theme="light"] .project-detail p,
+html[data-theme="light"] .project-detail__meta-label,
+html[data-theme="light"] .project-detail__plain-list li {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .project-detail__back,
+html[data-theme="light"] .project-detail__footer-link,
+html[data-theme="light"] .project-detail__intro-inner,
+html[data-theme="light"] .project-detail__simple,
+html[data-theme="light"] .project-detail__purpose-grid > div,
+html[data-theme="light"] .project-gallery__static-item {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(47, 111, 224, 0.25);
+  box-shadow: 0 8px 24px rgba(16, 25, 46, 0.1);
+}
+
+html[data-theme="light"] .project-detail__status-chip {
+  color: #1f8a4c;
+  background: rgba(31, 138, 76, 0.1);
+  border-color: rgba(31, 138, 76, 0.35);
+}
+
+html[data-theme="light"] .project-detail__flow {
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .project-detail__plain-list li::before {
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .navbar__link[aria-current="page"] {
+  color: #2f6fe0;
+}
+/* ============================================================
+   LIGHT MODE — NAVBAR
+   ============================================================ */
+
+html[data-theme="light"] {
+  --nav-bg: rgba(255, 255, 255, 0.6);
+  --nav-border: rgba(70, 120, 220, 0.28);
+  --nav-glow: rgba(60, 120, 255, 0.14);
+  --nav-text: #10213f;
+  --nav-text-muted: #45577a;
+  --nav-accent: #2f6fed;
+  --nav-control-bg: rgba(255, 255, 255, 0.5);
+  --nav-control-border: rgba(70, 120, 220, 0.3);
+}
+
+html[data-theme="light"] .navbar__inner {
+  box-shadow: 0 4px 22px rgba(30, 64, 175, 0.1), 0 0 20px var(--nav-glow);
+}
+
+html[data-theme="light"] .navbar__theme-menu {
+  box-shadow: 0 10px 26px rgba(30, 64, 175, 0.12), 0 0 16px var(--nav-glow);
+}
+
+html[data-theme="light"] .navbar__control-btn:hover {
+  background: rgba(47, 111, 237, 0.12);
+}
+
+html[data-theme="light"] .navbar__theme-option:hover,
+html[data-theme="light"] .navbar__theme-option:focus-visible {
+  background: rgba(47, 111, 237, 0.1);
+}
+
+/* ============================================================
+   LIGHT MODE — CONTACT SECTION
+   ============================================================ */
+
+html[data-theme="light"] .contact {
+  --contact-bg: rgba(255, 255, 255, 0.6);
+  --contact-border: rgba(70, 120, 220, 0.28);
+  --contact-glow: rgba(60, 120, 255, 0.12);
+  --contact-text: #10213f;
+  --contact-text-muted: #45577a;
+  --contact-accent: #2f6fed;
+  --contact-item-bg: rgba(47, 111, 237, 0.06);
+  --contact-item-border: rgba(70, 120, 220, 0.25);
+}
+
+html[data-theme="light"] .contact__item:hover .contact__icon,
+html[data-theme="light"] .contact__item:focus-visible .contact__icon {
+  background: rgba(47, 111, 237, 0.12);
+}

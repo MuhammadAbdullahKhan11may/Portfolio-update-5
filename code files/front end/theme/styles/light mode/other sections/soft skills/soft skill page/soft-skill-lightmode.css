@@ -1,0 +1,245 @@
+/* ============================================================
+   FILE: soft-skill-lightmode.css
+   Path: code files/front end/theme/styles/light mode/other sections/soft skills/soft skill page/soft-skill-lightmode.css
+   ============================================================ */
+
+html[data-theme="light"] body {
+  background-image: url("../../../../../../../assets/images/homepage%20baground/desktop%202.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #eef3fb;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="light"] body {
+    background-image: url("../../../../../../../assets/images/homepage%20baground/mobile%202.png");
+  }
+}
+
+html[data-theme="light"] .softpage__eyebrow {
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .softpage__heading {
+  color: #10192e;
+}
+html[data-theme="light"] .softpage__heading-accent {
+  background: linear-gradient(180deg, #2f6fe0, #1a4fb4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+html[data-theme="light"] .softpage__subtext {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .softpage__accent-line {
+  background: #2f6fe0;
+}
+
+html[data-theme="light"] .how-i-work {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(47, 111, 224, 0.22);
+  box-shadow: 0 8px 24px rgba(16, 25, 46, 0.08);
+}
+
+html[data-theme="light"] .how-i-work__heading {
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .how-i-work__icon {
+  background: rgba(47, 111, 224, 0.08);
+  border-color: rgba(47, 111, 224, 0.25);
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .how-i-work__title {
+  color: #10192e;
+}
+html[data-theme="light"] .how-i-work__desc {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .my-soft-skills__heading {
+  color: #10192e;
+}
+html[data-theme="light"] .my-soft-skills__heading-accent {
+  color: #2f6fe0;
+}
+html[data-theme="light"] .my-soft-skills__subtext {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .skill-grid__card {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: rgba(47, 111, 224, 0.2);
+  box-shadow: 0 8px 22px rgba(16, 25, 46, 0.07);
+}
+html[data-theme="light"] .skill-grid__card:hover {
+  border-color: #2f6fe0;
+  box-shadow: 0 12px 28px rgba(16, 25, 46, 0.1), 0 0 18px rgba(47, 111, 224, 0.12);
+}
+
+html[data-theme="light"] .skill-grid__icon {
+  background: rgba(47, 111, 224, 0.08);
+  border-color: rgba(47, 111, 224, 0.22);
+  color: #2f6fe0;
+}
+html[data-theme="light"] .skill-grid__card:hover .skill-grid__icon {
+  border-color: #2f6fe0;
+}
+
+html[data-theme="light"] .skill-grid__line {
+  background: #2f6fe0;
+}
+
+html[data-theme="light"] .skill-grid__title {
+  color: #10192e;
+}
+html[data-theme="light"] .skill-grid__desc {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .evidence__panel {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(47, 111, 224, 0.22);
+  box-shadow: 0 8px 24px rgba(16, 25, 46, 0.08);
+}
+
+html[data-theme="light"] .evidence__header-icon {
+  background: rgba(47, 111, 224, 0.08);
+  border-color: rgba(47, 111, 224, 0.25);
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .evidence__heading {
+  color: #10192e;
+}
+html[data-theme="light"] .evidence__heading-accent {
+  color: #2f6fe0;
+}
+html[data-theme="light"] .evidence__subtext {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .evidence__cta {
+  color: #2f6fe0;
+  border-color: rgba(47, 111, 224, 0.35);
+  background: rgba(47, 111, 224, 0.04);
+}
+html[data-theme="light"] .evidence__cta:hover,
+html[data-theme="light"] .evidence__cta:focus-visible {
+  background: rgba(47, 111, 224, 0.12);
+  border-color: #2f6fe0;
+}
+html[data-theme="light"] .evidence__cta:focus-visible {
+  outline-color: #2f6fe0;
+}
+
+html[data-theme="light"] .evidence__card {
+  background: rgba(47, 111, 224, 0.05);
+  border-color: rgba(47, 111, 224, 0.2);
+}
+
+html[data-theme="light"] .evidence__icon {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(47, 111, 224, 0.2);
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .evidence__card-title {
+  color: #10192e;
+}
+html[data-theme="light"] .evidence__card-desc {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .growth-strip__inner {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(47, 111, 224, 0.22);
+}
+
+html[data-theme="light"] .growth-strip__icon {
+  background: rgba(47, 111, 224, 0.08);
+  border-color: rgba(47, 111, 224, 0.25);
+  color: #2f6fe0;
+}
+
+html[data-theme="light"] .growth-strip__title {
+  color: #10192e;
+}
+html[data-theme="light"] .growth-strip__subtitle {
+  color: #4a5875;
+}
+
+html[data-theme="light"] .softpage__back-link {
+  color: #2f6fe0;
+  border-color: rgba(47, 111, 224, 0.35);
+  background: rgba(47, 111, 224, 0.04);
+}
+html[data-theme="light"] .softpage__back-link:hover,
+html[data-theme="light"] .softpage__back-link:focus-visible {
+  background: rgba(47, 111, 224, 0.12);
+  border-color: #2f6fe0;
+}
+html[data-theme="light"] .softpage__back-link:focus-visible {
+  outline-color: #2f6fe0;
+}
+
+html[data-theme="light"] .navbar__link[aria-current="page"] {
+  color: #2f6fe0;
+}
+/* ============================================================
+   LIGHT MODE — NAVBAR
+   ============================================================ */
+
+html[data-theme="light"] {
+  --nav-bg: rgba(255, 255, 255, 0.6);
+  --nav-border: rgba(70, 120, 220, 0.28);
+  --nav-glow: rgba(60, 120, 255, 0.14);
+  --nav-text: #10213f;
+  --nav-text-muted: #45577a;
+  --nav-accent: #2f6fed;
+  --nav-control-bg: rgba(255, 255, 255, 0.5);
+  --nav-control-border: rgba(70, 120, 220, 0.3);
+}
+
+html[data-theme="light"] .navbar__inner {
+  box-shadow: 0 4px 22px rgba(30, 64, 175, 0.1), 0 0 20px var(--nav-glow);
+}
+
+html[data-theme="light"] .navbar__theme-menu {
+  box-shadow: 0 10px 26px rgba(30, 64, 175, 0.12), 0 0 16px var(--nav-glow);
+}
+
+html[data-theme="light"] .navbar__control-btn:hover {
+  background: rgba(47, 111, 237, 0.12);
+}
+
+html[data-theme="light"] .navbar__theme-option:hover,
+html[data-theme="light"] .navbar__theme-option:focus-visible {
+  background: rgba(47, 111, 237, 0.1);
+}
+
+/* ============================================================
+   LIGHT MODE — CONTACT SECTION
+   ============================================================ */
+
+html[data-theme="light"] .contact {
+  --contact-bg: rgba(255, 255, 255, 0.6);
+  --contact-border: rgba(70, 120, 220, 0.28);
+  --contact-glow: rgba(60, 120, 255, 0.12);
+  --contact-text: #10213f;
+  --contact-text-muted: #45577a;
+  --contact-accent: #2f6fed;
+  --contact-item-bg: rgba(47, 111, 237, 0.06);
+  --contact-item-border: rgba(70, 120, 220, 0.25);
+}
+
+html[data-theme="light"] .contact__item:hover .contact__icon,
+html[data-theme="light"] .contact__item:focus-visible .contact__icon {
+  background: rgba(47, 111, 237, 0.12);
+}

@@ -1,0 +1,110 @@
+/* ============================================================
+   FILE: fire-detector-alarm-evergreen.css
+   Path: code files/front end/theme/styles/evergreen mode/other sections/projects/project page section/fire detector alarm/fire-detector-alarm-evergreen.css
+   ============================================================ */
+
+/* Depth: 8 levels up to "code files".
+   UNRESOLVED: confirm "desktop 3.png" / "mobile 3.png" filenames. */
+html[data-theme="evergreen"] body {
+  background-image: url("../../../../../../../../assets/images/homepage%20baground/desktop%203.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #06140e;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body {
+    background-image: url("../../../../../../../../assets/images/homepage%20baground/mobile%203.png");
+  }
+}
+
+/* Objective panel */
+html[data-theme="evergreen"] .project-detail__objective {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+html[data-theme="evergreen"] .project-detail__objective li {
+  color: var(--eg-muted);
+}
+
+/* How the circuit works */
+html[data-theme="evergreen"] .project-detail__steps {
+  background: var(--eg-glass-strong);
+  border-color: var(--eg-border);
+}
+html[data-theme="evergreen"] .project-detail__step {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.36);
+}
+html[data-theme="evergreen"] .project-detail__step-num {
+  color: var(--eg-accent);
+  border-color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .project-detail__step-arrow {
+  color: var(--eg-accent);
+}
+
+/* Core components */
+html[data-theme="evergreen"] .project-detail__component-card {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+html[data-theme="evergreen"] .project-detail p.project-detail__component-value {
+  color: var(--eg-accent-soft);
+}
+
+/* Circuit simulation */
+html[data-theme="evergreen"] .project-detail__simulation-trigger {
+  background: rgba(8, 26, 19, 0.5);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+html[data-theme="evergreen"] .project-detail__simulation-trigger:hover {
+  border-color: var(--eg-border-strong);
+}
+html[data-theme="evergreen"] .project-detail__simulation-trigger:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+html[data-theme="evergreen"] .project-detail__simulation-hint {
+  color: var(--eg-muted);
+}
+
+/* Limitations / Improvements */
+html[data-theme="evergreen"] .project-detail__split-card {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+html[data-theme="evergreen"] .project-detail__split-card li {
+  color: var(--eg-muted);
+}
+
+/* Lightbox */
+html[data-theme="evergreen"] .lightbox__backdrop {
+  background: rgba(3, 12, 8, 0.88);
+}
+html[data-theme="evergreen"] .lightbox__close {
+  background: var(--eg-glass-strong);
+  border-color: var(--eg-border-strong);
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .lightbox__close:hover {
+  border-color: var(--eg-accent);
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .lightbox__close:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}

@@ -1,0 +1,71 @@
+.education { padding: 60px 60px; }
+
+.education__inner { max-width: 1180px; margin: 0 auto; }
+
+.education__eyebrow {
+  color: #8fb4ff;
+  letter-spacing: 3px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.education__eyebrow::after {
+  content: ""; position: absolute; left: 0; bottom: 0;
+  width: 40px; height: 2px; background: #5aa3ff;
+}
+
+.education__heading { font-size: 2.6rem; font-weight: 800; color: #fff; margin: 0 0 16px; }
+.education__heading-accent {
+  background: linear-gradient(180deg, #bcd6ff, #4f9dff);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+.education__subtext { color: #c7d6f0; font-size: 1rem; max-width: 640px; margin: 0 0 36px; line-height: 1.6; }
+
+.education__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.education__card {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(9,18,36,.55);
+  border: 1px solid rgba(90,160,255,.32);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+.education__icon {
+  flex-shrink: 0;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(90,163,255,.4);
+  color: #5aa3ff;
+  background: rgba(90,163,255,.08);
+}
+
+.education__date { color: #8fb4ff; font-size: .82rem; letter-spacing: .5px; margin: 0 0 6px; }
+.education__degree { color: #fff; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px; line-height: 1.35; }
+.education__institution { color: #9db4d8; font-size: .88rem; margin: 0 0 12px; }
+.education__institution--placeholder { font-style: italic; opacity: .75; }
+
+.education__tag {
+  display: inline-block;
+  font-size: .78rem; font-weight: 600;
+  padding: 5px 14px; border-radius: 999px;
+  background: rgba(90,163,255,.15);
+  color: #9fc4ff;
+}
+
+.education__quote {
+  border-left: 2px solid #5aa3ff;
+  margin: 40px 0 0; padding-left: 16px;
+  font-style: italic; color: #a9c2ea; font-size: 1.05rem;
+}

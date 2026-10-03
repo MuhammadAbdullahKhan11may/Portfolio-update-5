@@ -1,0 +1,54 @@
+/* ============================================================
+   CONTACT — MOBILE OVERRIDES ONLY
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+  .contact {
+    padding: 36px 16px 50px;
+  }
+
+  .contact__inner {
+    padding: 32px 20px;
+    border-radius: 22px;
+  }
+
+  .contact__heading {
+    font-size: 1.35rem;
+  }
+
+  .contact__subtext {
+    font-size: 0.88rem;
+    margin-bottom: 26px;
+  }
+
+  .contact__actions {
+    gap: 18px;
+  }
+
+  .contact__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact__label {
+    font-size: 0.75rem;
+  }
+
+  .contact__email-popover {
+    max-width: min(220px, 74vw);
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact__actions {
+    gap: 12px;
+  }
+
+  .contact__icon {
+    width: 44px;
+    height: 44px;
+  }
+}

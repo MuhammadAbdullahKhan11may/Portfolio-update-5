@@ -1,0 +1,185 @@
+/* ============================================================
+   FILE: project-page-evergreen.css
+   Path: code files/front end/theme/styles/evergreen mode/other sections/projects/project page/project-page-evergreen.css
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   BACKGROUND — depth: 7 levels up to "code files"
+   UNRESOLVED: the Evergreen filenames below ("desktop 3.png" /
+   "mobile 3.png") follow the numbering pattern of desktop 1/2.
+   Confirm them against assets/images/homepage baground/.
+   Only these two url() lines may need changing.
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] body {
+  background-image: url("../../../../../../../assets/images/homepage%20baground/desktop%203.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #06140e;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body {
+    background-image: url("../../../../../../../assets/images/homepage%20baground/mobile%203.png");
+  }
+}
+
+/* ------------------------------------------------------------
+   TOKENS + SHARED NAVBAR / CONTACT VARIABLES
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] {
+  color-scheme: dark;
+
+  --eg-glass: rgba(8, 26, 19, 0.62);
+  --eg-glass-strong: rgba(6, 20, 15, 0.74);
+  --eg-border: rgba(52, 211, 153, 0.30);
+  --eg-border-strong: rgba(52, 211, 153, 0.58);
+  --eg-accent: #34d399;
+  --eg-accent-soft: #6ee7b7;
+  --eg-text: #f0f7f3;
+  --eg-muted: #a9c2b6;
+
+  --nav-bg: rgba(8, 26, 19, 0.6);
+  --nav-border: rgba(52, 211, 153, 0.30);
+  --nav-glow: rgba(16, 185, 129, 0.14);
+  --nav-text: #f0f7f3;
+  --nav-text-muted: #a9c2b6;
+  --nav-accent: #34d399;
+  --nav-control-bg: rgba(8, 26, 19, 0.5);
+  --nav-control-border: rgba(52, 211, 153, 0.30);
+}
+
+html[data-theme="evergreen"] .navbar__inner {
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.4), 0 0 20px var(--nav-glow);
+}
+html[data-theme="evergreen"] .navbar__theme-menu {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45), 0 0 16px var(--nav-glow);
+}
+html[data-theme="evergreen"] .navbar__control-btn:hover {
+  background: rgba(52, 211, 153, 0.12);
+}
+html[data-theme="evergreen"] .navbar__theme-option:hover,
+html[data-theme="evergreen"] .navbar__theme-option:focus-visible {
+  background: rgba(52, 211, 153, 0.12);
+}
+html[data-theme="evergreen"] .navbar__link[aria-current="page"] {
+  color: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] .contact {
+  --contact-bg: rgba(8, 26, 19, 0.6);
+  --contact-border: rgba(52, 211, 153, 0.30);
+  --contact-glow: rgba(16, 185, 129, 0.12);
+  --contact-text: #f0f7f3;
+  --contact-text-muted: #a9c2b6;
+  --contact-accent: #34d399;
+  --contact-item-bg: rgba(52, 211, 153, 0.06);
+  --contact-item-border: rgba(52, 211, 153, 0.25);
+}
+html[data-theme="evergreen"] .contact__item:hover .contact__icon,
+html[data-theme="evergreen"] .contact__item:focus-visible .contact__icon {
+  background: rgba(52, 211, 153, 0.14);
+}
+
+/* ------------------------------------------------------------
+   HEADER
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .projects-page__eyebrow {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .projects-page__eyebrow::after {
+  background: var(--eg-accent);
+}
+html[data-theme="evergreen"] .projects-page__heading {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .projects-page__heading-accent {
+  background: linear-gradient(180deg, #6ee7b7, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+html[data-theme="evergreen"] .projects-page__subtext {
+  color: var(--eg-muted);
+}
+
+/* ------------------------------------------------------------
+   CARDS
+   ------------------------------------------------------------ */
+html[data-theme="evergreen"] .project-card {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(52, 211, 153, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+html[data-theme="evergreen"] .project-card:not(.project-card--coming-soon):hover {
+  transform: translateY(-2px);
+  border-color: var(--eg-border-strong);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(52, 211, 153, 0.08);
+}
+
+/* Only the frame around the screenshot is themed — never the image */
+html[data-theme="evergreen"] .project-card__preview {
+  border-color: var(--eg-border);
+  background: rgba(4, 14, 10, 0.45);
+}
+
+html[data-theme="evergreen"] .project-card__title {
+  color: var(--eg-text);
+}
+html[data-theme="evergreen"] .project-card__type {
+  color: var(--eg-accent);
+}
+html[data-theme="evergreen"] .project-card__desc {
+  color: var(--eg-muted);
+}
+
+html[data-theme="evergreen"] .project-card__pills {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+html[data-theme="evergreen"] .project-card__pill {
+  color: var(--eg-text);
+  background: rgba(52, 211, 153, 0.10);
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+html[data-theme="evergreen"] .project-card__link {
+  color: var(--eg-accent);
+  border-color: var(--eg-border);
+  background: rgba(52, 211, 153, 0.05);
+}
+html[data-theme="evergreen"] .project-card__link:hover,
+html[data-theme="evergreen"] .project-card__link:focus-visible {
+  background: rgba(52, 211, 153, 0.16);
+  border-color: var(--eg-accent);
+  color: #ffffff;
+}
+html[data-theme="evergreen"] .project-card__link:focus-visible {
+  outline: 2px solid var(--eg-accent);
+  outline-offset: 2px;
+}
+
+html[data-theme="evergreen"] .project-card--coming-soon {
+  border-color: var(--eg-border);
+}
+html[data-theme="evergreen"] .project-card__link--disabled,
+html[data-theme="evergreen"] .project-card__link--disabled:hover {
+  color: var(--eg-muted);
+  background: rgba(52, 211, 153, 0.04);
+  border-color: var(--eg-border);
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="evergreen"] .project-card {
+    transition: none;
+  }
+  html[data-theme="evergreen"] .project-card:not(.project-card--coming-soon):hover {
+    transform: none;
+  }
+}

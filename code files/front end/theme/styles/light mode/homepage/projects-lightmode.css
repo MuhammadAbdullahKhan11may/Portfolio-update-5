@@ -1,0 +1,21 @@
+/* projects-lightmode.css */
+html[data-theme="light"] .projects__eyebrow { color: #2f6fed; }
+html[data-theme="light"] .projects__eyebrow::after { background: #2f6fed; }
+html[data-theme="light"] .projects__heading { color: #10213f; }
+html[data-theme="light"] .projects__heading-accent {
+  background: linear-gradient(180deg, #2f6fed, #1440b0);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="light"] .projects__subtext { color: #33456b; }
+html[data-theme="light"] .project-card { background: rgba(255,255,255,0.6); border-color: rgba(70,120,220,0.28); }
+html[data-theme="light"] .project-card__preview {
+  background: linear-gradient(135deg, rgba(47,111,237,0.14), rgba(255,255,255,0.4));
+  border-color: rgba(70,120,220,0.22);
+}
+html[data-theme="light"] .project-card__title { color: #10213f; }
+html[data-theme="light"] .project-card__tag { color: #1d4ed8; }
+html[data-theme="light"] .project-card__desc { color: #33456b; }
+html[data-theme="light"] .project-card__desc--todo { color: #7186ac; }
+html[data-theme="light"] .project-card__link { color: #2f6fed; }
+html[data-theme="light"] .projects__viewall { border-color: rgba(70,120,220,0.3); background: rgba(255,255,255,0.5); color: #10213f; }
+html[data-theme="light"] .projects__viewall:hover { border-color: #2f6fed; }

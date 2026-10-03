@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Khan — CV</title>
+<style>
+  :root {
+    --bg: #06132b;
+    --accent: #5aa3ff;
+    --text: #eaf2ff;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: var(--bg);
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+
+  .cv-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 24px;
+    background: rgba(9, 18, 36, .78);
+    border-bottom: 1px solid rgba(90, 160, 255, .25);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    z-index: 10;
+  }
+
+  .cv-bar__title {
+    color: var(--text);
+    font-weight: 700;
+    font-size: .95rem;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cv-bar__download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #06132b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .88rem;
+    transition: transform .15s ease;
+  }
+  .cv-bar__download:hover { transform: translateY(-2px); }
+
+  .cv-frame {
+    position: absolute;
+    top: 58px; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: calc(100% - 58px);
+    border: none;
+  }
+
+  .cv-fallback {
+    display: none;
+    position: absolute;
+    top: 58px; left: 0; right: 0; bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text);
+    text-align: center;
+    padding: 24px;
+  }
+</style>
+</head>
+<body>
+
+<div class="cv-bar">
+  <p class="cv-bar__title">Muhammad Abdullah Khan — CV</p>
+  <a href="CV%208.pdf" download="Muhammad_Abdullah_Khan_CV.pdf" class="cv-bar__download">
+    Download CV <span aria-hidden="true">⬇</span>
+  </a>
+</div>
+
+<embed src="CV%208.pdf" type="application/pdf" class="cv-frame" id="cvEmbed">
+
+<div class="cv-fallback" id="cvFallback">
+  <p>Your device can't preview PDFs inline here.</p>
+  <a href="CV%208.pdf" download="Muhammad_Abdullah_Khan_CV.pdf" class="cv-bar__download">Download CV</a>
+</div>
+
+<script>
+  (function () {
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent || "");
+    if (isIOS) {
+      document.getElementById("cvEmbed").style.display = "none";
+      document.getElementById("cvFallback").style.display = "flex";
+    }
+  })();
+</script>
+
+</body>
+</html>

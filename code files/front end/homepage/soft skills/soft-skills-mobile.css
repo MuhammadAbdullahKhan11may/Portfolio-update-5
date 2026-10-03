@@ -1,0 +1,46 @@
+@media (max-width: 640px) {
+
+    .soft-skills {
+    padding: 40px 16px;
+  }
+
+  .soft-skills__header {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .soft-skills__heading {
+    font-size: 2rem;
+  }
+
+  .soft-skills__quote {
+    padding-left: 14px;
+    max-width: none;
+    font-size: 0.98rem;
+  }
+
+  .soft-skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile shows exactly one card — the strongest/main skill (Communication),
+     per the mobile reference image. No carousel/arrows/dots. */
+  .soft-skills__card {
+    display: none;
+  }
+
+  .soft-skills__card[data-skill="communication"] {
+    display: block;
+    padding: 26px 22px;
+  }
+
+  .soft-skills__cta-wrap {
+    margin-top: 28px;
+  }
+
+  .soft-skills__cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

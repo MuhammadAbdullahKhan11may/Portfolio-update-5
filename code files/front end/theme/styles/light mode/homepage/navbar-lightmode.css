@@ -1,0 +1,16 @@
+/* navbar-lightmode.css */
+html[data-theme="light"] {
+  --nav-bg: rgba(255,255,255,0.6);
+  --nav-border: rgba(70,120,220,0.28);
+  --nav-glow: rgba(60,120,255,0.14);
+  --nav-text: #10213f;
+  --nav-text-muted: #45577a;
+  --nav-accent: #2f6fed;
+  --nav-control-bg: rgba(255,255,255,0.5);
+  --nav-control-border: rgba(70,120,220,0.3);
+}
+html[data-theme="light"] .navbar__inner { box-shadow: 0 4px 22px rgba(30,64,175,0.10), 0 0 20px var(--nav-glow); }
+html[data-theme="light"] .navbar__theme-menu { box-shadow: 0 10px 26px rgba(30,64,175,0.12), 0 0 16px var(--nav-glow); }
+html[data-theme="light"] .navbar__control-btn:hover { background: rgba(47,111,237,0.12); }
+html[data-theme="light"] .navbar__theme-option:hover,
+html[data-theme="light"] .navbar__theme-option:focus-visible { background: rgba(47,111,237,0.1); }

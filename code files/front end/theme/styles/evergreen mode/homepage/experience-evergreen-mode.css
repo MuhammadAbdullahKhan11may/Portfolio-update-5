@@ -1,0 +1,86 @@
+/* experience-evergreen-mode.css */
+
+html[data-theme="evergreen"] [class*="experience__eyebrow"] {
+  color: var(--eg-accent);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+html[data-theme="evergreen"] [class*="experience__eyebrow"]::after { background: var(--eg-accent); }
+
+html[data-theme="evergreen"] [class*="experience__heading"] {
+  color: #ffffff;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+html[data-theme="evergreen"] [class*="experience__heading-accent"] {
+  background: linear-gradient(180deg, var(--eg-accent-soft), var(--eg-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+html[data-theme="evergreen"] [class*="experience__subtext"] {
+  color: var(--eg-text-soft);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme="evergreen"] .experience__card {
+  background: var(--eg-glass-soft);
+  border-color: var(--eg-border);
+  box-shadow: var(--eg-shadow);
+  backdrop-filter: var(--eg-blur);
+  -webkit-backdrop-filter: var(--eg-blur);
+}
+html[data-theme="evergreen"] .experience__card:hover {
+  border-color: var(--eg-accent);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), 0 0 26px var(--eg-glow);
+}
+
+html[data-theme="evergreen"] [class*="experience__role"],
+html[data-theme="evergreen"] [class*="experience__position"] {
+  color: #ffffff;
+}
+
+html[data-theme="evergreen"] [class*="experience__org"],
+html[data-theme="evergreen"] [class*="experience__company"] {
+  color: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] [class*="experience__date"],
+html[data-theme="evergreen"] [class*="experience__period"],
+html[data-theme="evergreen"] [class*="experience__duration"] {
+  color: var(--eg-accent-soft);
+}
+
+html[data-theme="evergreen"] [class*="experience__desc"],
+html[data-theme="evergreen"] [class*="experience__summary"] {
+  color: var(--eg-text-muted);
+}
+
+html[data-theme="evergreen"] .experience__pill {
+  background: var(--eg-pill);
+  border-color: var(--eg-border-soft);
+  color: var(--eg-accent);
+}
+
+html[data-theme="evergreen"] .experience__details {
+  background: var(--eg-glass-inner);
+  border-color: var(--eg-border-soft);
+  color: var(--eg-text-soft);
+}
+
+html[data-theme="evergreen"] [class*="experience__viewall"],
+html[data-theme="evergreen"] [class*="experience__cta"],
+html[data-theme="evergreen"] [class*="experience__link"] {
+  color: var(--eg-accent);
+  border-color: var(--eg-border);
+}
+html[data-theme="evergreen"] [class*="experience__viewall"]:hover,
+html[data-theme="evergreen"] [class*="experience__cta"]:hover,
+html[data-theme="evergreen"] [class*="experience__link"]:hover {
+  border-color: var(--eg-accent);
+  box-shadow: 0 0 20px var(--eg-glow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="evergreen"] .experience__card { transition: none; }
+}

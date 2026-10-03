@@ -1,0 +1,418 @@
+/* ============================================================
+   FILE: fire-detector-alarm-desktop.css
+   Path: code files/front end/section folders/projects/project page section/fire detector alarm/fire-detector-alarm-desktop.css
+   ============================================================ */
+
+.project-detail,
+.project-detail *,
+.project-detail *::before,
+.project-detail *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background-image: url("../../../../../assets/images/homepage%20baground/desktop%201.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.project-detail {
+  padding: calc(var(--nav-height, 76px) + 60px) 60px 80px;
+  max-width: 1180px;
+  margin: 0 auto;
+  color: var(--nav-text, #eaf2ff);
+}
+
+.project-detail__topbar {
+  margin-bottom: 28px;
+}
+
+.project-detail__back,
+.project-detail__footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--nav-border, rgba(90, 160, 255, 0.32));
+  background: rgba(9, 18, 36, 0.55);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  color: var(--nav-text, #eaf2ff);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.project-detail__back:hover,
+.project-detail__footer-link:hover {
+  border-color: var(--nav-accent, #5aa3ff);
+  background: rgba(90, 163, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+.project-detail__back:focus-visible,
+.project-detail__footer-link:focus-visible,
+.project-detail__doc-btn:focus-visible,
+.project-detail__simulation-trigger:focus-visible {
+  outline: 2px solid var(--nav-accent, #5aa3ff);
+  outline-offset: 2px;
+}
+
+/* Intro */
+.project-detail__intro {
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--nav-border, rgba(90, 160, 255, 0.25));
+  margin-bottom: 48px;
+}
+
+.project-detail__intro-inner {
+  max-width: 760px;
+  padding: 36px 40px;
+  border-radius: 24px;
+  background: rgba(9, 18, 36, 0.6);
+  border: 1px solid var(--nav-border, rgba(90, 160, 255, 0.3));
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+.project-detail__eyebrow {
+  color: var(--nav-accent, #5aa3ff);
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.project-detail__title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+  color: var(--nav-text, #eaf2ff);
+}
+
+.project-detail__title-accent {
+  background: linear-gradient(180deg, #bcd6ff, #4f9dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-detail__subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--nav-text, #eaf2ff);
+  margin: 0 0 18px;
+}
+
+.project-detail__desc {
+  color: var(--nav-text-muted, #a7bcdc);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0 0 28px;
+}
+
+.project-detail__meta {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.project-detail__meta li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.project-detail__meta-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--nav-text-muted, #a7bcdc);
+}
+
+.project-detail__meta-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--nav-text, #eaf2ff);
+}
+
+.project-detail__doc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--nav-accent, #5aa3ff);
+  background: var(--nav-accent, #5aa3ff);
+  color: #06111f;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.project-detail__doc-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+/* Shared section styling */
+.project-detail section {
+  margin-bottom: 48px;
+}
+
+.project-detail h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 18px;
+  color: var(--nav-text, #eaf2ff);
+}
+
+.project-detail h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--nav-text, #eaf2ff);
+}
+
+.project-detail p {
+  color: var(--nav-text-muted, #a7bcdc);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.project-detail ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--nav-text-muted, #a7bcdc);
+}
+
+.project-detail ul li {
+  padding: 4px 0;
+  line-height: 1.55;
+}
+
+/* Overview + Objective */
+.project-detail__grid-section {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.project-detail__overview,
+.project-detail__objective {
+  border: 1px solid var(--nav-border, rgba(90, 160, 255, 0.3));
+  border-radius: 18px;
+  padding: 24px 28px;
+  background: rgba(9, 18, 36, 0.5);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+/* Workflow / Steps */
+.project-detail__steps {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  padding: 24px;
+  margin: 0;
+  border: 1px solid var(--nav-border, rgba(90, 160, 255, 0.3));
+  border-radius: 18px;
+  background: var(--nav-bg, rgba(9, 18, 36, 0.4));
+}
+
+.project-detail__step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.project-detail__step-num {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--nav-accent, #5aa3ff);
+  color: var(--nav-accent, #5aa3ff);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.project-detail__step h3 {
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.project-detail__step p {
+  font-size: 0.82rem;
+}
+
+.project-detail__step-arrow {
+  flex: 0 0 auto;
+  align-self: center;
+  color: var(--nav-accent, #5aa3ff);
+  font-size: 1.1rem;
+}
+
+/* Components */
+.project-detail__components-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.project-detail__component-card {
+  border: 1px solid var(--nav-border, rgba(90, 160, 255, 0.3));
+  border-radius: 14px;
+  padding: 18px 20px;
+  background: var(--nav-bg, rgba(9, 18, 36, 0.4));
+}
+
+.project-detail__component-value {
+  font-weight: 600;
+  color: var(--nav-text, #eaf2ff);
+  font-size: 0.88rem;
+  margin: 4px 0;
+}
+
+.project-detail__component-desc {
+  font-size: 0.85rem;
+}
+
+/* Circuit Simulation */
+.project-detail__simulation-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid var(--nav-border, rgba(90, 160, 255, 0.3));
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  cursor: zoom-in;
+}
+
+.project-detail__simulation-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-detail__simulation-hint {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--nav-text-muted, #a7bcdc);
+  text-align: center;
+}
+
+/* Limitations / Improvements */
+.project-detail__split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-detail__split-card {
+  border: 1px solid var(--nav-border, rgba(90, 160, 255, 0.3));
+  border-left: 3px solid var(--nav-accent, #5aa3ff);
+  border-radius: 14px;
+  padding: 22px 26px;
+  background: var(--nav-bg, rgba(9, 18, 36, 0.4));
+}
+
+/* Footer nav */
+.project-detail__footer-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--nav-border, rgba(90, 160, 255, 0.25));
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 8, 16, 0.86);
+}
+
+.lightbox__img {
+  position: relative;
+  max-width: 92vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(9, 18, 36, 0.7);
+  color: #eaf2ff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2001;
+}
+
+.lightbox__close:hover {
+  background: rgba(90, 163, 255, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-detail__back,
+  .project-detail__footer-link,
+  .project-detail__doc-btn {
+    transition: none;
+  }
+}
+
+/* ============================================================
+   LIGHTBOX VISIBILITY FIX
+   ============================================================ */
+
+.lightbox[hidden] {
+  display: none !important;
+}
+
+.lightbox:not([hidden]) {
+  display: flex;
+}

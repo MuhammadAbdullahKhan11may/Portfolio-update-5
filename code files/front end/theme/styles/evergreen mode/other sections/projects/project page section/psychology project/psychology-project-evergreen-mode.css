@@ -1,0 +1,62 @@
+/* ============================================================
+   FILE: psychology-project-evergreen.css
+   Path: code files/front end/theme/styles/evergreen mode/other sections/projects/project page section/psychology project/psychology-project-evergreen.css
+   ============================================================ */
+
+/* Depth: 8 levels up to "code files".
+   UNRESOLVED: confirm "desktop 3.png" / "mobile 3.png" filenames. */
+html[data-theme="evergreen"] body {
+  background-image: url("../../../../../../../../assets/images/homepage%20baground/desktop%203.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #06140e;
+}
+
+@media (max-width: 860px) {
+  html[data-theme="evergreen"] body {
+    background-image: url("../../../../../../../../assets/images/homepage%20baground/mobile%203.png");
+  }
+}
+
+/* Status chip */
+html[data-theme="evergreen"] .project-detail__status-chip {
+  color: var(--eg-accent-soft);
+  background: rgba(52, 211, 153, 0.12);
+  border-color: rgba(52, 211, 153, 0.4);
+}
+
+/* Simple text sections */
+html[data-theme="evergreen"] .project-detail__simple {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.36);
+}
+
+/* Purpose & Approach */
+html[data-theme="evergreen"] .project-detail__purpose-grid > div {
+  background: var(--eg-glass);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+html[data-theme="evergreen"] .project-detail__purpose-num {
+  color: var(--eg-accent);
+}
+
+/* What We Did */
+html[data-theme="evergreen"] .project-detail p.project-detail__flow {
+  color: var(--eg-accent-soft);
+}
+html[data-theme="evergreen"] .project-detail__plain-list li {
+  color: var(--eg-muted);
+}
+
+/* Static gallery (frames only) */
+html[data-theme="evergreen"] .project-gallery__static-item {
+  background: rgba(8, 26, 19, 0.5);
+  border-color: var(--eg-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="../../../theme/theme.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificates — Abdullah Khan</title>
+
+<link rel="stylesheet" href="../../../theme/styles/theme-transition.css">
+
+<link rel="stylesheet" href="../../../navbar/navbar-desktop.css">
+<link rel="stylesheet" href="../../../navbar/navbar-mobile.css">
+<link rel="stylesheet" href="../../../theme/styles/light%20mode/homepage/navbar-lightmode.css">
+
+<link rel="stylesheet" href="../../../contacts/contact-desktop.css">
+<link rel="stylesheet" href="../../../contacts/contact-mobile.css">
+<link rel="stylesheet" href="../../../theme/styles/light%20mode/homepage/contact-lightmode.css">
+
+<link rel="stylesheet" href="certificate-page-desktop.css">
+<link rel="stylesheet" href="certificate-page-mobile.css">
+<link rel="stylesheet" href="../../../theme/styles/light%20mode/other%20sections/certificates/certificate%20page/certificate-page-lightmode.css">
+</head>
+<body class="cert-page-body">
+
+<div id="navbar-root"></div>
+
+<main class="cert-page">
+
+  <div class="cert-back__wrap">
+    <a href="../../../homepage/index/index.html" class="cert-back">
+      <span aria-hidden="true">←</span> Back to Portfolio
+    </a>
+  </div>
+
+  <section class="cert-hero js-reveal">
+    <p class="cert-hero__eyebrow">CERTIFICATES</p>
+    <h1 class="cert-hero__heading">Certi<span class="cert-hero__heading-accent">ficates</span> &amp; Achievements</h1>
+    <p class="cert-hero__lead">Learning beyond the classroom.</p>
+    <p class="cert-hero__desc">Certifications, workshops, hackathons, internships and experiences reflecting continued growth across software engineering, AI, cybersecurity and professional development.</p>
+    <div class="cert-hero__meta">
+      <span>17 Credentials</span>
+      <span aria-hidden="true">•</span>
+      <span>Technical + Professional</span>
+    </div>
+  </section>
+
+  <nav class="cert-filters" aria-label="Filter certificates by category">
+    <button type="button" class="cert-filters__btn is-active" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="cert-filters__btn" data-filter="technical" aria-pressed="false">Technical</button>
+    <button type="button" class="cert-filters__btn" data-filter="ai" aria-pressed="false">AI</button>
+    <button type="button" class="cert-filters__btn" data-filter="cybersecurity" aria-pressed="false">Cybersecurity</button>
+    <button type="button" class="cert-filters__btn" data-filter="hackathons" aria-pressed="false">Hackathons</button>
+    <button type="button" class="cert-filters__btn" data-filter="workshops" aria-pressed="false">Workshops</button>
+    <button type="button" class="cert-filters__btn" data-filter="experience" aria-pressed="false">Experience</button>
+  </nav>
+
+  <section class="cert-section js-reveal" aria-labelledby="featuredHeading">
+    <h2 class="cert-section__heading" id="featuredHeading">Featured Credentials</h2>
+    <div class="cert-featured-grid">
+
+      <button type="button" class="certificate-card featured-card js-cert-card"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/18.jpg"
+              data-alt="Front-end AI Engineering internship certificate of completion from FlyRank.ai, awarded to Muhammad Abdullah Khan"
+              aria-label="Open Front-end AI Engineering certificate">
+        <span class="certificate-card__thumb">
+          <img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/18.jpg" alt="Front-end AI Engineering internship certificate from FlyRank.ai" class="certificate-card__thumb-img" loading="eager">
+        </span>
+        <span class="certificate-card__tag">Experience · AI</span>
+        <span class="certificate-card__title">Front-end AI Engineering — Internship</span>
+        <span class="certificate-card__issuer">FlyRank.ai</span>
+        <span class="certificate-card__date">Jul – Sep 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card featured-card js-cert-card"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/6.jpg"
+              data-alt="Industrial Cybersecurity Essentials certificate from Cisco Networking Academy, awarded to Abdullah Khan"
+              aria-label="Open Industrial Cybersecurity Essentials certificate">
+        <span class="certificate-card__thumb">
+          <img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/6.jpg" alt="Industrial Cybersecurity Essentials certificate from Cisco Networking Academy" class="certificate-card__thumb-img" loading="eager">
+        </span>
+        <span class="certificate-card__tag">Cybersecurity</span>
+        <span class="certificate-card__title">Industrial Cybersecurity Essentials</span>
+        <span class="certificate-card__issuer">Cisco Networking Academy · NANOTECHX</span>
+        <span class="certificate-card__date">Jun 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card featured-card js-cert-card"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/1.jpg"
+              data-alt="Certificate of Participation for HackFest Datathon Competitive Programming module, awarded to Abdullah Khan"
+              aria-label="Open HackFest Datathon certificate">
+        <span class="certificate-card__thumb">
+          <img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/1.jpg" alt="Certificate of Participation for HackFest Datathon" class="certificate-card__thumb-img" loading="eager">
+        </span>
+        <span class="certificate-card__tag">Hackathons</span>
+        <span class="certificate-card__title">HackFest Datathon</span>
+        <span class="certificate-card__issuer">Google Developer Group IBA · IBA Data Science Society</span>
+        <span class="certificate-card__date">Feb 2026</span>
+      </button>
+
+    </div>
+  </section>
+
+  <section class="cert-section js-reveal" aria-labelledby="allCertsHeading">
+    <h2 class="cert-section__heading" id="allCertsHeading">All Certificates</h2>
+    <div class="cert-all-grid" id="allCertificatesGrid">
+
+      <button type="button" class="certificate-card js-cert-card" data-category="hackathons"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/1.jpg"
+              data-alt="Certificate of Participation for HackFest Datathon Competitive Programming module"
+              aria-label="Open HackFest Datathon certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/1.jpg" alt="HackFest Datathon certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Hackathons</span>
+        <span class="certificate-card__title">HackFest Datathon</span>
+        <span class="certificate-card__issuer">Google Developer Group IBA · IBA Data Science Society</span>
+        <span class="certificate-card__date">Feb 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="technical"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/2.jpg"
+              data-alt="C++ Essentials 2 certificate from Cisco Networking Academy and C++ Institute"
+              aria-label="Open C++ Essentials 2 certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/2.jpg" alt="C++ Essentials 2 certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Technical</span>
+        <span class="certificate-card__title">C++ Essentials 2</span>
+        <span class="certificate-card__issuer">Cisco Networking Academy · NANOTECHX</span>
+        <span class="certificate-card__date">Jan 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="experience"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/3.jpg"
+              data-alt="Certificate of Honour for being Teacher's Assistant in Physics at Beaconhouse College Programme"
+              aria-label="Open Certificate of Honour — Physics Teacher's Assistant">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/3.jpg" alt="Certificate of Honour, Physics Teacher's Assistant" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Experience</span>
+        <span class="certificate-card__title">Certificate of Honour — Physics TA</span>
+        <span class="certificate-card__issuer">Beaconhouse College Programme</span>
+        <span class="certificate-card__date">Aug 2024</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="experience"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/4.jpg"
+              data-alt="Letter of Appreciation for volunteering at Patel Hospital's Patel Stallion Programme"
+              aria-label="Open Letter of Appreciation from Patel Hospital">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/4.jpg" alt="Letter of Appreciation from Patel Hospital" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Experience</span>
+        <span class="certificate-card__title">Letter of Appreciation</span>
+        <span class="certificate-card__issuer">Patel Hospital</span>
+        <span class="certificate-card__date">Sep 2023</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="cybersecurity"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/6.jpg"
+              data-alt="Industrial Cybersecurity Essentials certificate from Cisco Networking Academy"
+              aria-label="Open Industrial Cybersecurity Essentials certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/6.jpg" alt="Industrial Cybersecurity Essentials certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Cybersecurity</span>
+        <span class="certificate-card__title">Industrial Cybersecurity Essentials</span>
+        <span class="certificate-card__issuer">Cisco Networking Academy · NANOTECHX</span>
+        <span class="certificate-card__date">Jun 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="workshops"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/7.png"
+              data-alt="Certificate of Academic Excellence for the OOP Clinic Workshop at MAJU"
+              aria-label="Open OOP Clinic Workshop certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/7.png" alt="OOP Clinic Workshop certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Workshops</span>
+        <span class="certificate-card__title">OOP Clinic Workshop</span>
+        <span class="certificate-card__issuer">Microsoft Learn Student Community, MAJU</span>
+        <span class="certificate-card__date">Jan 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="ai"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/8.png"
+              data-alt="Microsoft Learn Student Ambassador certificate for completing the Agentic AI Seminar 2026"
+              aria-label="Open Agentic AI Seminar 2026 certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/8.png" alt="Agentic AI Seminar 2026 certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">AI</span>
+        <span class="certificate-card__title">Agentic AI Seminar 2026</span>
+        <span class="certificate-card__issuer">Microsoft Learn Student Community, MAJU</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="cybersecurity technical"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/9.jpg"
+              data-alt="Industrial Networking Essentials certificate from Cisco Networking Academy"
+              aria-label="Open Industrial Networking Essentials certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/9.jpg" alt="Industrial Networking Essentials certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Cybersecurity</span>
+        <span class="certificate-card__title">Industrial Networking Essentials</span>
+        <span class="certificate-card__issuer">Cisco Networking Academy · NANOTECHX</span>
+        <span class="certificate-card__date">Jun 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="technical"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/10.jpg"
+              data-alt="DataCamp Statement of Accomplishment for Data Structures and Algorithms in Python"
+              aria-label="Open Data Structures and Algorithms in Python certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/10.jpg" alt="Data Structures and Algorithms in Python certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Technical</span>
+        <span class="certificate-card__title">Data Structures &amp; Algorithms in Python</span>
+        <span class="certificate-card__issuer">DataCamp</span>
+        <span class="certificate-card__date">Jun 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="hackathons"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/11.png"
+              data-alt="Certificate of Appreciation for Hackathon Programming Battle SP26, Competitive Programming"
+              aria-label="Open Hackathon Programming Battle SP26 certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/11.png" alt="Hackathon Programming Battle SP26 certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Hackathons</span>
+        <span class="certificate-card__title">Hackathon Programming Battle SP26</span>
+        <span class="certificate-card__issuer">MAJU CodeCraft · Industrial Relations Committee</span>
+        <span class="certificate-card__date">Jun 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="hackathons ai"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/13.jpg"
+              data-alt="Certificate of Participation for ViCoDathon 2026, India's AI Vibe Coding Hackathon, by AB Talks"
+              aria-label="Open ViCoDathon 2026 certificate">
+        <span class="certificate-card__thumb certificate-card__thumb--dark"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/13.jpg" alt="ViCoDathon 2026 certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Hackathons · AI</span>
+        <span class="certificate-card__title">ViCoDathon 2026</span>
+        <span class="certificate-card__issuer">AB Talks</span>
+        <span class="certificate-card__date">Aug 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="cybersecurity"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/14.jpg"
+              data-alt="Introduction to Cybersecurity certificate offered by Mohammad Ali Jinnah University through Cisco Networking Academy"
+              aria-label="Open Introduction to Cybersecurity certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/14.jpg" alt="Introduction to Cybersecurity certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Cybersecurity</span>
+        <span class="certificate-card__title">Introduction to Cybersecurity</span>
+        <span class="certificate-card__issuer">Cisco Networking Academy · MAJU</span>
+        <span class="certificate-card__date">Jul 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="ai"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/15.jpg"
+              data-alt="Certificate of Completion for AI Fluency for Builders by CodePath.org and Anthropic"
+              aria-label="Open AI Fluency for Builders certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/15.jpg" alt="AI Fluency for Builders certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">AI</span>
+        <span class="certificate-card__title">AI Fluency for Builders</span>
+        <span class="certificate-card__issuer">CodePath.org &amp; Anthropic</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="ai"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/16.jpg"
+              data-alt="Certificate of Completion for AI Fluency: AI Capabilities and Limitations by Anthropic"
+              aria-label="Open AI Fluency: Capabilities and Limitations certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/16.jpg" alt="AI Fluency: Capabilities and Limitations certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">AI</span>
+        <span class="certificate-card__title">AI Fluency: Capabilities &amp; Limitations</span>
+        <span class="certificate-card__issuer">Anthropic</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="experience ai"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/17.jpg"
+              data-alt="Certificate of Completion for the AI Fluency internship program at FlyRank.ai"
+              aria-label="Open AI Fluency internship certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/17.jpg" alt="AI Fluency internship certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Experience · AI</span>
+        <span class="certificate-card__title">AI Fluency — Internship</span>
+        <span class="certificate-card__issuer">FlyRank.ai</span>
+        <span class="certificate-card__date">Jul – Sep 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="experience ai"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/18.jpg"
+              data-alt="Certificate of Completion for the Front-end AI Engineering internship program at FlyRank.ai"
+              aria-label="Open Front-end AI Engineering internship certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/18.jpg" alt="Front-end AI Engineering internship certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">Experience · AI</span>
+        <span class="certificate-card__title">Front-end AI Engineering — Internship</span>
+        <span class="certificate-card__issuer">FlyRank.ai</span>
+        <span class="certificate-card__date">Jul – Sep 2026</span>
+      </button>
+
+      <button type="button" class="certificate-card js-cert-card" data-category="ai"
+              data-img="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/19.jpg"
+              data-alt="Certificate of Completion for Claude 101 by Anthropic"
+              aria-label="Open Claude 101 certificate">
+        <span class="certificate-card__thumb"><img src="../../../../assets/images/section%20specific%20cards/certificates/certificate%20page/19.jpg" alt="Claude 101 certificate" class="certificate-card__thumb-img" loading="lazy"></span>
+        <span class="certificate-card__tag">AI</span>
+        <span class="certificate-card__title">Claude 101</span>
+        <span class="certificate-card__issuer">Anthropic</span>
+      </button>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="contact-root"></div>
+
+<div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate preview">
+  <button type="button" class="cert-modal__close" id="certModalClose" aria-label="Close certificate preview">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path d="M6 6L18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <div class="cert-modal__frame">
+    <img id="certModalImg" src="" alt="" class="cert-modal__img">
+  </div>
+</div>
+
+<script src="certificate-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!-- ============================================================
+     FILE: technical-skill.html
+     Path: code files/front end/section folders/technical skills/technical skill page/technical-skill.html
+     ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Skills — Abdullah Khan</title>
+
+<script src="../../../theme/theme.js"></script>
+<link rel="stylesheet" href="../../../theme/styles/theme-transition.css">
+
+<link rel="stylesheet" href="../../../navbar/navbar-desktop.css">
+<link rel="stylesheet" href="../../../navbar/navbar-mobile.css">
+
+<link rel="stylesheet" href="technical-skill-desktop.css">
+<link rel="stylesheet" href="technical-skill-mobile.css">
+<link rel="stylesheet" href="../../../theme/styles/light%20mode/other%20sections/technical%20skills/technical%20skill%20page/technical-skill-lightmode.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="skills-page" id="page-content">
+
+  <section class="skills-page__hero reveal" id="skillsHero" aria-labelledby="skillsHeading">
+    <div class="skills-page__inner">
+      <p class="skills-page__eyebrow">MY EXPERTISE</p>
+      <h1 class="skills-page__heading" id="skillsHeading">
+        Technical <span class="skills-page__heading-accent">Skills</span>
+      </h1>
+      <p class="skills-page__subtext">Technologies, tools and engineering concepts I use to build, solve and ship modern applications.</p>
+    </div>
+  </section>
+
+  <section class="skills-snapshot reveal" aria-label="Skills snapshot">
+    <div class="skills-page__inner">
+      <div class="skills-snapshot__grid">
+        <div class="skills-snapshot__item">
+          <span class="skills-snapshot__value">30+</span>
+          <span class="skills-snapshot__label">Technologies</span>
+        </div>
+        <div class="skills-snapshot__item">
+          <span class="skills-snapshot__value">8</span>
+          <span class="skills-snapshot__label">Categories</span>
+        </div>
+        <div class="skills-snapshot__item">
+          <span class="skills-snapshot__value">Full-Stack · AI · Algorithms</span>
+          <span class="skills-snapshot__label">Project Areas</span>
+        </div>
+        <div class="skills-snapshot__item">
+          <span class="skills-snapshot__value">Build · Integrate · Deploy</span>
+          <span class="skills-snapshot__label">Focus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-categories-section" aria-labelledby="skillsByCategoryHeading">
+    <div class="skills-page__inner">
+
+      <h2 class="skills-categories-section__heading" id="skillsByCategoryHeading">Skills by Category</h2>
+
+            <div class="skills-filters" role="group" aria-label="Filter skill categories">
+        <button type="button" class="skills-filters__trigger" id="filterTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="filterList">
+          <svg class="skills-filters__trigger-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+          </svg>
+          <span class="skills-filters__trigger-label">Filter: <span id="filterTriggerValue">All</span></span>
+          <svg class="skills-filters__trigger-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="skills-filters__list" id="filterList">
+          <button type="button" class="skills-filters__btn" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="skills-filters__btn" data-filter="languages" aria-pressed="false">Languages</button>
+          <button type="button" class="skills-filters__btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button type="button" class="skills-filters__btn" data-filter="backend" aria-pressed="false">Backend</button>
+          <button type="button" class="skills-filters__btn" data-filter="databases" aria-pressed="false">Databases</button>
+          <button type="button" class="skills-filters__btn" data-filter="tools" aria-pressed="false">Tools &amp; Platforms</button>
+          <button type="button" class="skills-filters__btn" data-filter="engineering" aria-pressed="false">CS &amp; Engineering</button>
+          <button type="button" class="skills-filters__btn" data-filter="ai" aria-pressed="false">AI Development</button>
+          <button type="button" class="skills-filters__btn" data-filter="productivity" aria-pressed="false">Productivity</button>
+        </div>
+      </div>
+
+      <div class="skills-categories" id="skillsCategories">
+
+        <article class="skill-category reveal" data-category="languages">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M8 5 3 12l5 7M16 5l5 7-5 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">Programming Languages</h3>
+              <p class="skill-category__desc">Core programming languages used across web development, algorithms and application development.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">C++</span></span><span class="skill-tile__name">C++</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">C</span></span><span class="skill-tile__name">C</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Py</span></span><span class="skill-tile__name">Python</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">J</span></span><span class="skill-tile__name">Java</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">JS</span></span><span class="skill-tile__name">JavaScript</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">TS</span></span><span class="skill-tile__name">TypeScript</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category reveal" data-category="frontend">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="4.5" width="18" height="15" rx="2.2"/>
+                <path d="M3 8.5h18" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">Frontend Development</h3>
+              <p class="skill-category__desc">Building responsive, accessible and interactive user interfaces.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">H5</span></span><span class="skill-tile__name">HTML5</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">CSS</span></span><span class="skill-tile__name">CSS3</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">JS</span></span><span class="skill-tile__name">JavaScript</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">⚛</span></span><span class="skill-tile__name">React</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">N</span></span><span class="skill-tile__name">Next.js</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">TW</span></span><span class="skill-tile__name">Tailwind CSS</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category reveal" data-category="backend">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2.3 20.8 7.4V16.6L12 21.7 3.2 16.6V7.4Z"/>
+                <path d="M12 21.7V12M12 12 3.2 7.4M12 12l8.8-4.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">Backend Development</h3>
+              <p class="skill-category__desc">Building APIs, authentication flows and server-side application logic.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Node</span></span><span class="skill-tile__name">Node.js</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">EX</span></span><span class="skill-tile__name">Express.js</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Nest</span></span><span class="skill-tile__name">NestJS</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">API</span></span><span class="skill-tile__name">REST APIs</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">JWT</span></span><span class="skill-tile__name">JWT</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">bc</span></span><span class="skill-tile__name">bcrypt</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category reveal" data-category="databases">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/>
+                <path d="M4.5 5.5V18.5C4.5 20 8 21.3 12 21.3S19.5 20 19.5 18.5V5.5" stroke-linecap="round"/>
+                <path d="M4.5 12C4.5 13.5 8 14.8 12 14.8S19.5 13.5 19.5 12" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">Databases &amp; Data</h3>
+              <p class="skill-category__desc">Relational and document data storage used across full-stack applications.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">PG</span></span><span class="skill-tile__name">PostgreSQL</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">MY</span></span><span class="skill-tile__name">MySQL</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">DB</span></span><span class="skill-tile__name">MongoDB</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">SQL</span></span><span class="skill-tile__name">SQL</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">PR</span></span><span class="skill-tile__name">Prisma ORM</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category reveal" data-category="tools">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M14.7 6.3a3.5 3.5 0 0 1-4.6 4.6L4.5 16.5a2 2 0 0 0 2.8 2.8L12.9 13a3.5 3.5 0 0 1 4.6-4.6l-2 2-1.8-.6-.6-1.8 2-2Z" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">Development Tools &amp; Platforms</h3>
+              <p class="skill-category__desc">Tools and platforms used to develop, test, document and deploy applications.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Git</span></span><span class="skill-tile__name">Git</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">GH</span></span><span class="skill-tile__name">GitHub</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">VS</span></span><span class="skill-tile__name">VS Code</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">VS</span></span><span class="skill-tile__name">Visual Studio</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">PM</span></span><span class="skill-tile__name">Postman</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">SW</span></span><span class="skill-tile__name">Swagger / OpenAPI</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">MY</span></span><span class="skill-tile__name">MySQL Workbench</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Fig</span></span><span class="skill-tile__name">Figma</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">RD</span></span><span class="skill-tile__name">Render</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">VC</span></span><span class="skill-tile__name">Vercel</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Ai</span></span><span class="skill-tile__name">Aiven</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Ne</span></span><span class="skill-tile__name">Neon</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category reveal" data-category="engineering">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="7" y="7" width="10" height="10" rx="1.5"/>
+                <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2 2M19 5l-2 2M5 19l2-2M19 19l-2-2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">CS &amp; Software Engineering</h3>
+              <p class="skill-category__desc">Core computer science concepts and engineering practices behind the applications I build.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile skill-tile--wide"><span class="skill-icon"><span class="skill-icon__placeholder">DSA</span></span><span class="skill-tile__name">Data Structures &amp; Algorithms</span></li>
+            <li class="skill-tile skill-tile--wide"><span class="skill-icon"><span class="skill-icon__placeholder">OOP</span></span><span class="skill-tile__name">Object-Oriented Programming</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">ALG</span></span><span class="skill-tile__name">Algorithm Design</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">DB</span></span><span class="skill-tile__name">Database Design</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">API</span></span><span class="skill-tile__name">API Design</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">SYS</span></span><span class="skill-tile__name">System Design</span></li>
+            <li class="skill-tile skill-tile--wide"><span class="skill-icon"><span class="skill-icon__placeholder">AUTH</span></span><span class="skill-tile__name">Authentication &amp; Authorization</span></li>
+            <li class="skill-tile skill-tile--wide"><span class="skill-icon"><span class="skill-icon__placeholder">RBAC</span></span><span class="skill-tile__name">Role-Based Access Control</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">RES</span></span><span class="skill-tile__name">Responsive Design</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">A11Y</span></span><span class="skill-tile__name">Accessibility</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">ERR</span></span><span class="skill-tile__name">Error Handling</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category reveal" data-category="ai">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="3.2"/>
+                <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.5 5.5l2.1 2.1M16.4 16.4l2.1 2.1M18.5 5.5l-2.1 2.1M7.6 16.4l-2.1 2.1" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">AI Development &amp; Tools</h3>
+              <p class="skill-category__desc">AI models, development tools and integration workflows used in recent projects.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">GPT</span></span><span class="skill-tile__name">ChatGPT</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Cl</span></span><span class="skill-tile__name">Claude</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Ge</span></span><span class="skill-tile__name">Gemini</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Cu</span></span><span class="skill-tile__name">Cursor</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Co</span></span><span class="skill-tile__name">Microsoft Copilot</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">v0</span></span><span class="skill-tile__name">V0</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Ma</span></span><span class="skill-tile__name">Manus</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Fig</span></span><span class="skill-tile__name">Figma</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">API</span></span><span class="skill-tile__name">Gemini API</span></li>
+            <li class="skill-tile skill-tile--wide"><span class="skill-icon"><span class="skill-icon__placeholder">SDK</span></span><span class="skill-tile__name">AI SDK / LLM Integration</span></li>
+            <li class="skill-tile skill-tile--wide"><span class="skill-icon"><span class="skill-icon__placeholder">STR</span></span><span class="skill-tile__name">Streaming AI Responses</span></li>
+            <li class="skill-tile skill-tile--wide"><span class="skill-icon"><span class="skill-icon__placeholder">TL</span></span><span class="skill-tile__name">Structured Tool Outputs</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">PE</span></span><span class="skill-tile__name">Prompt Engineering</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">AGT</span></span><span class="skill-tile__name">AI Agents</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">MCP</span></span><span class="skill-tile__name">MCP Concepts</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category reveal" data-category="productivity">
+          <div class="skill-category__header">
+            <span class="skill-category__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M7 2.5h7.5L19 7v14.5H7V2.5z" stroke-linejoin="round"/>
+                <path d="M14.5 2.5V7H19" stroke-linejoin="round"/>
+                <path d="M9.5 13h5M9.5 16h5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="skill-category__title">Productivity &amp; Communication</h3>
+              <p class="skill-category__desc">Tools used for documentation, planning, presentations and day-to-day project work.</p>
+            </div>
+          </div>
+          <ul class="skill-category__tiles">
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Gr</span></span><span class="skill-tile__name">Grammarly</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">No</span></span><span class="skill-tile__name">Notion</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">W</span></span><span class="skill-tile__name">Microsoft Word</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">P</span></span><span class="skill-tile__name">PowerPoint</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Ex</span></span><span class="skill-tile__name">Excel</span></li>
+            <li class="skill-tile"><span class="skill-icon"><span class="skill-icon__placeholder">Do</span></span><span class="skill-tile__name">Google Docs</span></li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-learning reveal" aria-label="Continuous learning">
+    <div class="skills-page__inner">
+      <div class="skills-learning__inner">
+        <div class="skills-learning__text">
+          <span class="skills-learning__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke-linecap="round"/>
+              <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/>
+            </svg>
+          </span>
+          <span>
+            <span class="skills-learning__title">Always learning new technologies</span>
+            <span class="skills-learning__subtitle">Exploring. Building. Improving.</span>
+          </span>
+        </div>
+        <a href="../../../homepage/index/index.html" class="skills-back__link">
+          <span aria-hidden="true">←</span> Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="contact-root"></div>
+
+<script src="technical-skill.js"></script>
+</body>
+</html>
