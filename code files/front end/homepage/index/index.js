@@ -104,16 +104,16 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var componentLoads = [
-      ["../../navbar/navbar.html", "#navbar-root"],
-      ["../about me/about-me.html", "#about-root"],
-      ["../education/education.html", "#education-root"],
-      ["../experience/experience.html", "#experience-root"],
-      ["../projects/projects.html", "#projects-root"],
-      ["../certificates/certificates.html", "#certificates-root"],
-      ["../technical skills/technical-skills.html", "#technical-skills-root"],
-      ["../soft skills/soft-skills.html", "#soft-skills-root"],
-      ["../../contacts/contact.html", "#contact-root"]
+        var componentLoads = [
+      ["code%20files/front%20end/navbar/navbar.html", "#navbar-root"],
+      ["code%20files/front%20end/homepage/about%20me/about-me.html", "#about-root"],
+      ["code%20files/front%20end/homepage/education/education.html", "#education-root"],
+      ["code%20files/front%20end/homepage/experience/experience.html", "#experience-root"],
+      ["code%20files/front%20end/homepage/projects/projects.html", "#projects-root"],
+      ["code%20files/front%20end/homepage/certificates/certificates.html", "#certificates-root"],
+      ["code%20files/front%20end/homepage/technical%20skills/technical-skills.html", "#technical-skills-root"],
+      ["code%20files/front%20end/homepage/soft%20skills/soft-skills.html", "#soft-skills-root"],
+      ["code%20files/front%20end/contacts/contact.html", "#contact-root"]
     ];
 
     var pending = componentLoads.length;
