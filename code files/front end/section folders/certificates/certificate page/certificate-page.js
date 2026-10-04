@@ -16,7 +16,7 @@
 
   window.NAVBAR_CONFIG = {
     mode: "external",
-    homeUrl: "../../../homepage/index/index.html",
+    homeUrl: "../../../../../index.html",
     experienceUrl: "../../experience/experience%20page/experience-page.html"
   };
 

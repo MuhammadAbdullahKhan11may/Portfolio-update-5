@@ -12,7 +12,7 @@
      anchors. Must run before navbar.js executes. */
   window.NAVBAR_CONFIG = {
     mode: "external",
-    homeUrl: "../../../homepage/index/index.html"
+    homeUrl: "../../../../../index.html"
   };
 
   function loadComponent(url, targetSelector, callback) {
