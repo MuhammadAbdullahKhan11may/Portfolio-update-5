@@ -432,8 +432,17 @@ F:.
 |                   |   |               psychology-project-evergreen-mode.css
 |                   |   |               
 |                   |   +---certificates
+|                   |   |   \---certificate page
+|                   |   |           certificate-page-evergreen-mode.css
+|                   |   |           
 |                   |   +---soft skills
+|                   |   |   \---soft skill page
+|                   |   |           soft-skill-page-evergreen-mode.css
+|                   |   |           
 |                   |   \---technical skills
+|                   |       \---technical skills page
+|                   |               technical-skills-page-evergreen-mode.css
+|                   |               
 |                   \---homepage
 |                           about-me-evergreen-mode.css
 |                           education-evergreen-mode.css
