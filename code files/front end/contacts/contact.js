@@ -5,6 +5,14 @@
 (function () {
   "use strict";
 
+    // Resolve the CV link from this script's own location so it works
+  // on every page, whatever folder depth the page is in.
+  var thisScript = document.currentScript;
+  var cvLink = document.getElementById("cvLink");
+  if (cvLink && thisScript && thisScript.src) {
+    cvLink.href = new URL("../section%20folders/CV/cv.html", thisScript.src).href;
+  }
+
   var emailBtn = document.getElementById("emailBtn");
   var emailPopover = document.getElementById("emailPopover");
 
