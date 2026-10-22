@@ -23,16 +23,16 @@ html[data-theme="evergreen"] body {
 }
 
 html[data-theme="evergreen"] .detail-card {
-  background: var(--eg-glass);
-  border: 1px solid var(--eg-border);
-  box-shadow: var(--eg-shadow);
-  backdrop-filter: var(--eg-blur);
-  -webkit-backdrop-filter: var(--eg-blur);
+  background: var(--eg-glass, rgba(6, 28, 18, 0.6));
+  border: 1px solid var(--eg-border, rgba(46, 234, 139, 0.28));
+  box-shadow: var(--eg-shadow, 0 8px 32px rgba(0, 0, 0, 0.35));
+  backdrop-filter: var(--eg-blur, blur(14px));
+  -webkit-backdrop-filter: var(--eg-blur, blur(14px));
 }
 
 html[data-theme="evergreen"] .detail-card__logo {
-  background: #ffffff;
-  border: 1px solid var(--eg-border);
+    background: #ffffff;
+  border: 1px solid var(--eg-border, rgba(46, 234, 139, 0.28));
 }
 
 html[data-theme="evergreen"] .detail-pills {
@@ -44,7 +44,7 @@ html[data-theme="evergreen"] .detail-pills {
 
 html[data-theme="evergreen"] .detail-tabs {
   background: rgba(4, 20, 12, 0.35);
-  border-color: var(--eg-border-soft);
+    border-color: var(--eg-border-soft, rgba(46, 234, 139, 0.28));
   box-shadow: none;
 }
 
