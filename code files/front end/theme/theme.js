@@ -147,7 +147,15 @@
   document.addEventListener("click", function (e) {
     var btn = e.target.closest ? e.target.closest("[data-theme-value]") : null;
     if (!btn) return;
-    setThemePreference(btn.getAttribute("data-theme-value"));
+        setThemePreference(btn.getAttribute("data-theme-value"));
+    setTimeout(function () {
+      alert(
+        "tapped: " + btn.getAttribute("data-theme-value") +
+        "\nstored: " + localStorage.getItem(THEME_KEY) +
+        "\ndata-theme: " + root.getAttribute("data-theme") +
+        "\nOS dark: " + mediaQuery.matches
+      );
+    }, 1600);
   });
 
   window.themeController = {
